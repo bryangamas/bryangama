@@ -4,7 +4,7 @@ import useDarkMode from "use-dark-mode";
 import { lightTheme, darkTheme } from "../styles/theme";
 
 const Providers = ({ children }) => {
-  const { value } = useDarkMode(false, { storageKey: null, onChange: null });
+  const { value } = useDarkMode(false);
   const theme = value ? darkTheme : lightTheme;
 
   const [mounted, setMounted] = useState(false);
