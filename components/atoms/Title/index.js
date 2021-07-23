@@ -16,3 +16,7 @@ export const MainTitle = ({ children }) => {
 export const Subtitle = ({ children }) => {
   return <StyledTitle auxiliary>{children}</StyledTitle>;
 };
+
+export const SectionTitle = ({ children }) => {
+  return <StyledTitle underline>{children}</StyledTitle>;
+};

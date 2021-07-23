@@ -1,19 +1,15 @@
 import Head from "next/head";
+import About from "../components/About";
 import Header from "../components/Header";
 import Home from "../components/Home";
-import PageOptions from "../components/PageOptions";
+import Layout from "../components/Layout";
 
 export default function MainPage() {
   return (
-    <div>
-      <Head>
-        <title>Bryan Gama | Full Stack Developer</title>
-        <meta name="description" content="Fullstack Developer" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
       <Header />
       <Home />
-      <Home />
-    </div>
+      <About />
+    </Layout>
   );
 }
