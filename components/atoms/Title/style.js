@@ -30,6 +30,10 @@ const StyledTitle = styled.h2`
       return line(theme);
     }
   }}
+
+  @media (min-width: 450px) {
+    font-size: ${({ bigger }) => (bigger ? "6.8rem" : "3.6rem")};
+  }
 `;
 
 export default StyledTitle;

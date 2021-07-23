@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const StyledParagraph = styled.p`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.text.primary};
+
+  @media (min-width: 450px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const ParagraphWrapper = styled.div`

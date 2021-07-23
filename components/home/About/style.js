@@ -5,6 +5,7 @@ export const AboutContent = styled(StyledContainer)`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 `;
 
 export const AboutMe = styled.div`
@@ -12,7 +13,7 @@ export const AboutMe = styled.div`
   flex-direction: column;
 
   & > * {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
 `;
 

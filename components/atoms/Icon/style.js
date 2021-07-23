@@ -2,8 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const IconAsImg = styled.img`
-  width: 26px;
+  min-width: 24px;
+  max-width: 28px;
+  min-height: 20px;
+  max-height: 24px;
   ${(props) => extraAttr(props)}
+
+  @media (min-width: 450px) {
+    min-width: 40px;
+    max-width: 40px;
+    max-height: 40px;
+  }
 `;
 
 export const IconAsMask = styled.i`
@@ -15,9 +24,14 @@ export const IconAsMask = styled.i`
   background: ${({ theme }) => {
     return theme.text.secondary;
   }};
-  width: 26px;
-  height: ${({ ratio }) => (ratio ? "" + 26 * ratio + "px" : "26px")};
+  width: 24px;
+  height: ${({ ratio }) => (ratio ? "" + 24 * ratio + "px" : "24px")};
   ${(props) => extraAttr(props)}
+
+  @media (min-width: 450px) {
+    width: 40px;
+    height: ${({ ratio }) => (ratio ? "" + 40 * ratio + "px" : "40px")};
+  }
 `;
 
 const extraAttr = ({ onClick, href }) => {
