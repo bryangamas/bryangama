@@ -1,0 +1,26 @@
+{
+  "heroData": {
+    "greetings": "Hi there! My name is",
+    "profileName": "Bryan Gama",
+    "role": "Full Stack Developer",
+    "description": "I am passionate about technology and implementing incredible solutions and designs using:"
+  },
+  "aboutData": {
+    "title": "About me",
+    "skillsTitle": "Skills",
+    "aboutItems": [
+      {
+        "icon": "info/person",
+        "text": "I am a Systems Engineering student and I currently reside in Peru."
+      },
+      {
+        "icon": "info/tools",
+        "text": "Within the stacks that I handle, I like to work mainly with React, Node.js (with Express) and with one of the technologies with which I interact the most and I think it has a lot of potential: Next.js. "
+      },
+      {
+        "icon": "info/computer",
+        "text": "I am a true believer that we never stop learning, which is why I am always trying new technologies. I was recently testing Vue.js."
+      }
+    ]
+  }
+}

@@ -6,22 +6,19 @@ import Image from "next/image";
 import profilePhoto from "@public/imgs/profile.png";
 import Icon from "@components/atoms/Icon";
 
-const Home = () => {
+const Home = ({ heroData: t }) => {
   return (
     <HomeContent center>
       <MainInfo>
-        <Title>Hola, mi nombre es</Title>
-        <MainTitle>Bryan Gama</MainTitle>
-        <Subtitle>Desarrollador Full Stack</Subtitle>
-        <Paragraph>
-          Apasionado por la tecnología y por implementar soluciones y diseños
-          increíbles usando:
-        </Paragraph>
+        <Title>{t.greetings}</Title>
+        <MainTitle>{t.profileName}</MainTitle>
+        <Subtitle>{t.role}</Subtitle>
+        <Paragraph>{t.description}</Paragraph>
       </MainInfo>
       <ProfilePhoto>
         <Image
           src={profilePhoto}
-          alt="Bryan Gama"
+          alt={t.profileName}
           placeholder="blur"
           layout="responsive"
         />

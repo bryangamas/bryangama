@@ -4,29 +4,22 @@ import { AboutContent, AboutMe, AboutSkills } from "./style";
 import Paragraph from "@components/atoms/Paragraph";
 import Separator from "@components/atoms/Separator";
 
-const About = () => {
+const About = ({ aboutData: t }) => {
+  let skillNumber = 1;
   return (
     <AboutContent secondary>
       <AboutMe>
-        <SectionTitle>Sobre mí</SectionTitle>
+        <SectionTitle>{t.title}</SectionTitle>
         <Separator />
-        <Paragraph icon="/icons/info/person.svg">
-          Soy estudiante de Ingeniería de Sistemas y actualmente resido en Perú.
-        </Paragraph>
-        <Paragraph icon="/icons/info/tools.svg">
-          Dentro de los stacks que manejo, me gusta trabajar principalmente con
-          React, Node.js (con Express) y una de las tecnologías con las que más
-          interactúo y creo que tiene mucho potencial: Next.js.
-        </Paragraph>
-        <Paragraph icon="/icons/info/computer.svg">
-          Soy fiel creyente de que nunca paramos de aprender, por lo que siempre
-          estoy probando nuevas tecnologías. Recientemente estuve probando
-          Vue.js.
-        </Paragraph>
+        {t.aboutItems.map(({ icon, text }) => (
+          <Paragraph key={skillNumber++} icon={`/icons/${icon}.svg`}>
+            {text}
+          </Paragraph>
+        ))}
       </AboutMe>
 
       <AboutSkills>
-        <SectionTitle>Habilidades</SectionTitle>
+        <SectionTitle>{t.skillsTitle}</SectionTitle>
         <Separator />
       </AboutSkills>
     </AboutContent>
