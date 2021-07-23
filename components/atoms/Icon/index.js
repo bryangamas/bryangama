@@ -10,13 +10,19 @@ const Icon = ({ src, href, onClick, lightIfDark, ratio }) => {
     <StyledIcon
       src={src}
       onClick={onClick}
-      lightIfDark={lightIfDark}
       light={lightIfDark && darkMode}
       ratio={ratio}
     />
   );
+
   if (href) {
-    return <Link to={href}>{body}</Link>;
+    return (
+      <Link href={href}>
+        <a rel="noopener" target="_blank">
+          {body}
+        </a>
+      </Link>
+    );
   }
   return body;
 };

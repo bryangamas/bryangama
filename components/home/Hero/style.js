@@ -12,7 +12,7 @@ export const HeroContainer = styled(StyledContainer)`
 export const HeroContent = styled.main`
   display: contents;
 
-  @media (min-width: 450px) {
+  @media (min-width: 700px) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -32,5 +32,8 @@ export const MainInfo = styled.div`
 
 export const ProfilePhoto = styled.div`
   width: 70%;
-  max-width: 350px;
+  max-width: 200px;
+  @media (min-width: 700px) {
+    max-width: 350px;
+  }
 `;

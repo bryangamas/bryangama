@@ -4,7 +4,7 @@ export const StyledParagraph = styled.p`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.text.primary};
 
-  @media (min-width: 450px) {
+  @media (min-width: 700px) {
     font-size: 1.6rem;
   }
 `;

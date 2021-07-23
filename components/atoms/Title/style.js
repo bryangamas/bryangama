@@ -17,7 +17,7 @@ const line = (theme) => {
   }
   
   
-  @media (min-width: 450px) {
+  @media (min-width: 700px) {
     &::after{
       left: 5.2rem;
       height: 1rem;
@@ -42,7 +42,7 @@ const StyledTitle = styled.h2`
     }
   }}
 
-  @media (min-width: 450px) {
+  @media (min-width: 700px) {
     font-size: ${({ bigger }) => (bigger ? "6.8rem" : "3.6rem")};
   }
 `;

@@ -8,7 +8,7 @@ const IconAsImg = styled.img`
   max-height: 24px;
   ${(props) => extraAttr(props)}
 
-  @media (min-width: 450px) {
+  @media (min-width: 700px) {
     min-width: 40px;
     max-width: 40px;
     max-height: 40px;
@@ -28,7 +28,7 @@ export const IconAsMask = styled.i`
   height: ${({ ratio }) => (ratio ? "" + 24 * ratio + "px" : "24px")};
   ${(props) => extraAttr(props)}
 
-  @media (min-width: 450px) {
+  @media (min-width: 700px) {
     width: 40px;
     height: ${({ ratio }) => (ratio ? "" + 40 * ratio + "px" : "40px")};
   }
