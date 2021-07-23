@@ -9,7 +9,7 @@ export const MainInfo = styled.div`
   }
 `;
 
-export const HomeContent = styled(StyledContainer)`
+export const HeroContent = styled(StyledContainer)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

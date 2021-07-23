@@ -7,6 +7,8 @@ export const StyledParagraph = styled.p`
 
 export const ParagraphWrapper = styled.div`
   display: flex;
+  align-items: center;
+
   & > * {
     margin-left: 5%;
   }

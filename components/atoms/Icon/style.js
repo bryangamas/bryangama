@@ -6,16 +6,17 @@ const IconAsImg = styled.img`
   ${(props) => extraAttr(props)}
 `;
 
-const IconAsMask = styled.i`
+export const IconAsMask = styled.i`
   display: inline-block;
-  mask-size: cover;
+  mask-image: url(${({ src }) => src});
+  mask-size: contain;
+  mask-position: center;
   mask-repeat: no-repeat;
   background: ${({ theme }) => {
     return theme.text.secondary;
   }};
   width: 26px;
   height: ${({ ratio }) => (ratio ? "" + 26 * ratio + "px" : "26px")};
-  mask-image: url(${({ src }) => src});
   ${(props) => extraAttr(props)}
 `;
 
@@ -26,7 +27,11 @@ const extraAttr = ({ onClick, href }) => {
 const StyledIcon = (props) => {
   const { light } = props;
   if (light) {
-    return <IconAsMask {...props} />;
+    return (
+      <div>
+        <IconAsMask {...props} />
+      </div>
+    );
   }
   return <IconAsImg {...props} />;
 };

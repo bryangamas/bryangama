@@ -6,8 +6,9 @@ const StyledHeader = styled.header`
   position: fixed;
   right: 0;
   left: 0;
-  background-color: ${({ theme }) => theme.bg.inset};
   padding: 1.2rem 2rem;
+  background-color: ${({ theme }) => theme.bg.inset};
+  box-shadow: ${({ theme }) => theme.shadow.general};
   z-index: 1;
 `;
 

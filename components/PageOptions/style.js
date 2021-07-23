@@ -4,7 +4,7 @@ const StyledPageOptions = styled.section`
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: calc(100% + 0.8rem);
+  top: calc(100% + 1rem);
   right: 2rem;
 
   & > * {

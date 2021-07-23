@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const StyledContainer = styled.section`
   min-height: 100vh;
+  min-width: 320px;
   background-color: ${({ theme, secondary }) =>
     secondary ? theme.bg.secondary : theme.bg.primary};
   text-align: ${({ center }) => (center ? "center" : "left")};
