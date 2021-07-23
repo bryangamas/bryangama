@@ -23,7 +23,7 @@ const Home = ({ heroData: t }) => {
           layout="responsive"
         />
       </ProfilePhoto>
-      <Icon src="/icons/down.svg" />
+      <Icon lightIfDark ratio={0.7} src="/icons/down.svg" />
     </HomeContent>
   );
 };

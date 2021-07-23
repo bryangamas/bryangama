@@ -17,6 +17,7 @@ const PageOptions = () => {
       <Icon
         src={`/icons/pageOptions/${darkMode ? "lightMode" : "darkMode"}.svg`}
         onClick={toggleTheme}
+        lightIfDark
       />
     </StyledPageOptions>
   );

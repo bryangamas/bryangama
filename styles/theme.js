@@ -13,6 +13,7 @@ const light = {
 };
 
 const dark = {
+  isDarkMode: true,
   bg: {
     primary: "#1F2633",
     secondary: "#191F28",
