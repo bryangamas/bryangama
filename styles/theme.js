@@ -8,6 +8,7 @@ const light = {
     primary: "#212426",
     secondary: "#4E6172",
     highlight: "#2B97D9",
+    auxiliary: "rgba(78, 97, 114, 0.8);",
   },
 };
 
@@ -21,6 +22,7 @@ const dark = {
     primary: "#EEEEEE",
     secondary: "#C8D0D7",
     highlight: "#2B97D9",
+    auxiliary: "rgba(193, 213, 232, 0.8);",
   },
 };
 
