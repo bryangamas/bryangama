@@ -14,7 +14,18 @@ const line = (theme) => {
     width: 8rem;
     height: 0.5rem;
     border-radius: 20px;
-  }`;
+  }
+  
+  
+  @media (min-width: 450px) {
+    &::after{
+      left: 5.2rem;
+      height: 1rem;
+      width: 12rem;
+    }
+  }
+
+  `;
 };
 
 const StyledTitle = styled.h2`

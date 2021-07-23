@@ -13,6 +13,7 @@ const StyledContainer = styled.section`
 
   @media (min-width: 450px) {
     text-align: left;
+    padding-right: 6.8rem;
   }
 
   & > * {

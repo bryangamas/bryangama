@@ -2,6 +2,7 @@ import styled from "styled-components";
 import StyledContainer from "@components/Container/style";
 
 export const HeroContainer = styled(StyledContainer)`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

@@ -7,10 +7,12 @@ import profilePhoto from "@public/imgs/profile.png";
 import { Title, MainTitle, Subtitle } from "@components/atoms/Title";
 import { HeroContainer, HeroContent, MainInfo, ProfilePhoto } from "./style";
 import Icon from "@components/atoms/Icon";
+import SocialMedia from "@components/SocialMedia";
 
 const Hero = ({ heroData: t }) => {
   return (
     <HeroContainer center>
+      <SocialMedia />
       <HeroContent>
         <MainInfo>
           <Title>{t.greetings}</Title>
