@@ -1,8 +1,8 @@
 import React from "react";
-import { SectionTitle } from "../atoms/Title";
+import { SectionTitle } from "@components/atoms/Title";
 import { AboutContent, AboutMe, AboutSkills } from "./style";
-import Paragraph from "../atoms/Paragraph";
-import Separator from "../atoms/Separator";
+import Paragraph from "@components/atoms/Paragraph";
+import Separator from "@components/atoms/Separator";
 
 const About = () => {
   return (

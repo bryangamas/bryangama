@@ -1,14 +1,11 @@
-import Head from "next/head";
-import About from "../components/About";
-import Header from "../components/Header";
-import Home from "../components/Home";
-import Layout from "../components/Layout";
+import About from "@components/home/About";
+import Hero from "@components/home/Hero";
+import Layout from "@components/Layout";
 
 export default function MainPage() {
   return (
     <Layout>
-      <Header />
-      <Home />
+      <Hero />
       <About />
     </Layout>
   );

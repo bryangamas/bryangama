@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "../atoms/Icon";
-import PageOptions from "../PageOptions";
+import Icon from "@components/atoms/Icon";
+import PageOptions from "@components/PageOptions";
 import StyledHeader from "./style";
 
 const Header = () => {

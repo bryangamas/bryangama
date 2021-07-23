@@ -1,10 +1,10 @@
 import React from "react";
-import Paragraph from "../atoms/Paragraph";
-import { Title, MainTitle, Subtitle } from "../atoms/Title";
+import Paragraph from "@components/atoms/Paragraph";
+import { Title, MainTitle, Subtitle } from "@components/atoms/Title";
 import { HomeContent, MainInfo, ProfilePhoto } from "./style";
 import Image from "next/image";
-import profilePhoto from "../../public/imgs/profile.png";
-import Icon from "../atoms/Icon";
+import profilePhoto from "@public/imgs/profile.png";
+import Icon from "@components/atoms/Icon";
 
 const Home = () => {
   return (

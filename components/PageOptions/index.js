@@ -1,6 +1,6 @@
 import React from "react";
 import StyledPageOptions from "./style";
-import Icon from "../atoms/Icon";
+import Icon from "@components/atoms/Icon";
 
 const PageOptions = () => {
   return (

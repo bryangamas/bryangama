@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledParagraph, ParagraphWrapper } from "./style";
-import Icon from "../Icon";
+import Icon from "@components/atoms/Icon";
 
 const Paragraph = ({ children, icon }) => {
   if (icon)
