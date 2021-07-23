@@ -29,7 +29,7 @@ const Hero = ({ heroData: t }) => {
           />
         </ProfilePhoto>
       </HeroContent>
-      <Icon lightIfDark ratio={0.7} src="/icons/down.svg" />
+      <Icon brightIfDark ratio={0.7} src="/icons/down.svg" />
     </HeroContainer>
   );
 };

@@ -1,13 +1,14 @@
 import React from "react";
 import Icon from "@components/atoms/Icon";
 import PageOptions from "@components/PageOptions";
-import StyledHeader from "./style";
+import { StyledHeader, HamburguerMenu, FullMenu } from "./style";
 
-const Header = () => {
+const Header = ({ navData }) => {
   return (
     <StyledHeader>
       <Icon src="/icons/logo.svg" />
-      <Icon src="/icons/hamburger.svg" />
+      <HamburguerMenu />
+      <FullMenu navData={navData} />
       <PageOptions />
     </StyledHeader>
   );

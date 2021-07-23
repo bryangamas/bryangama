@@ -1,4 +1,11 @@
 {
+  "navData": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Projectos",
+    "contact": "Contacto",
+    "resume": "CV"
+  },
   "heroData": {
     "greetings": "Hola, mi nombre es",
     "profileName": "Bryan Gama",

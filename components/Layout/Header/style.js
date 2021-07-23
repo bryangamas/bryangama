@@ -1,6 +1,8 @@
+import StyledIcon from "@components/atoms/Icon/style";
 import styled from "styled-components";
+import Navigation from "../Navigation";
 
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -12,4 +14,33 @@ const StyledHeader = styled.header`
   z-index: 1;
 `;
 
-export default StyledHeader;
+export const FullMenu = styled(Navigation)`
+  display: none;
+
+  @media (min-width: 700px) {
+    & {
+      display: block;
+      width: 100%;
+    }
+
+    & > ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      font-size: 1.8rem;
+    }
+
+    & > ul > li {
+      margin-left: 4%;
+    }
+  }
+`;
+
+export const HamburguerMenu = styled(StyledIcon).attrs(() => ({
+  src: "/icons/hamburger.svg",
+}))`
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;

@@ -6,7 +6,7 @@ const SocialMedia = () => {
   return (
     <StyledSocialMedia>
       <Icon
-        lightIfDark
+        brigherIfDark
         src="/icons/socialMedia/github.svg"
         href="https://github.com/bryangamas"
       />

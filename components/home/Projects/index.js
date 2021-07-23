@@ -1,11 +1,12 @@
 import { SectionTitle } from "@components/atoms/Title";
 import React from "react";
+import { ProjectsContainer } from "./style";
 
 const Projects = () => {
   return (
-    <div>
+    <ProjectsContainer>
       <SectionTitle>Proyectos</SectionTitle>
-    </div>
+    </ProjectsContainer>
   );
 };
 

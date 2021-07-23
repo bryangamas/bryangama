@@ -6,7 +6,7 @@ const Paragraph = ({ children, icon }) => {
   if (icon)
     return (
       <ParagraphWrapper>
-        <Icon lightIfDark src={icon} />
+        <Icon brightIfDark src={icon} />
         <StyledParagraph>{children}</StyledParagraph>
       </ParagraphWrapper>
     );

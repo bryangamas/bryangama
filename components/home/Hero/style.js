@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import StyledContainer from "@components/Container/style";
 
-export const HeroContainer = styled(StyledContainer)`
+export const HeroContainer = styled(StyledContainer).attrs(() => ({
+  id: "home",
+}))`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -27,6 +29,12 @@ export const MainInfo = styled.div`
 
   & > * {
     margin-bottom: 2%;
+  }
+
+  @media (min-width: 700px) {
+    & > * {
+      margin-bottom: 4%;
+    }
   }
 `;
 

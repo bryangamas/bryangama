@@ -14,6 +14,12 @@ const StyledSocialMediaDesktop = styled.section`
 
     & > * {
       margin-bottom: 4.2rem;
+      opacity: 0.8;
+    }
+
+    & > *:hover {
+      opacity: 1;
+      transition: opacity 0.2s ease-in;
     }
   }
 `;

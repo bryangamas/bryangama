@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import StyledContainer from "@components/Container/style";
 
-export const AboutContent = styled(StyledContainer)`
+export const AboutContent = styled(StyledContainer).attrs(() => ({
+  id: "about",
+}))`
   display: flex;
   flex-direction: column;
   justify-content: space-around;

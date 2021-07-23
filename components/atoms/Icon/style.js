@@ -9,9 +9,9 @@ const IconAsImg = styled.img`
   ${(props) => extraAttr(props)}
 
   @media (min-width: 700px) {
-    min-width: 40px;
-    max-width: 40px;
-    max-height: 40px;
+    min-width: 35px;
+    max-width: 35px;
+    max-height: 35px;
   }
 `;
 
@@ -21,16 +21,16 @@ export const IconAsMask = styled.i`
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
-  background: ${({ theme }) => {
-    return theme.text.secondary;
+  background: ${({ theme, brighter }) => {
+    return brighter ? theme.text.primary : theme.text.secondary;
   }};
   width: 24px;
   height: ${({ ratio }) => (ratio ? "" + 24 * ratio + "px" : "24px")};
   ${(props) => extraAttr(props)}
 
   @media (min-width: 700px) {
-    width: 40px;
-    height: ${({ ratio }) => (ratio ? "" + 40 * ratio + "px" : "40px")};
+    width: 35px;
+    height: ${({ ratio }) => (ratio ? "" + 35 * ratio + "px" : "35px")};
   }
 `;
 
@@ -39,8 +39,8 @@ const extraAttr = ({ onClick, href }) => {
 };
 
 const StyledIcon = (props) => {
-  const { light } = props;
-  if (light) {
+  const { bright, brighter } = props;
+  if (bright || brighter) {
     return (
       <div>
         <IconAsMask {...props} />
