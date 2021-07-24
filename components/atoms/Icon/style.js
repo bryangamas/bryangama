@@ -50,7 +50,7 @@ const StyledIcon = (props) => {
 
 export const IconCaption = styled(StyledParagraph)`
   position: absolute;
-  top: calc(100%);
+  top: calc(100% - 5px);
   left: 50%;
   transform: translateX(-50%);
 `;
@@ -78,19 +78,21 @@ export const IconWithCaptionContainer = styled.div`
   }
 
   &:hover {
+    & > ${IconCaption} {
+      opacity: 1;
+      transition: opacity 200ms ease-in;
+    }
+
     & > ${IconAsImg} {
       opacity: 1;
-      transition: opacity 100ms ease-in;
+      transform: translateY(-10px);
+      transition: opacity, transform 100ms ease-in;
     }
 
     & > ${IconAsMask} {
       opacity: 0;
-      transition: opacity 100ms ease-in;
-    }
-
-    & > ${IconCaption} {
-      opacity: 1;
-      transition: opacity 200ms ease-in;
+      transform: translateY(-10px);
+      transition: opacity, transform 100ms ease-in;
     }
   }
 

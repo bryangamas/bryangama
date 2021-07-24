@@ -2,7 +2,7 @@
   "navData": {
     "home": "Inicio",
     "about": "Sobre mí",
-    "projects": "Projectos",
+    "projects": "Proyectos",
     "contact": "Contacto",
     "resume": "CV"
   },
@@ -29,5 +29,33 @@
         "text": "Soy fiel creyente de que nunca paramos de aprender, por lo que siempre estoy probando nuevas tecnologías. Recientemente estuve probando Vue.js."
       }
     ]
-  }
+  },
+  "projectsData": [
+    {
+      "slug": "loopstudios",
+      "title": "Loopstudios Landing Page",
+      "description": "Página de inicio 100% responsiva para una empresa de realidad virtual.",
+      "live": "https://loopstudios-landing-page-bay.vercel.app",
+      "source": "https://github.com/bryangamas/loopstudios-landing-page",
+      "features": [
+        "Mobile First",
+        "Pixel Perfect",
+        "Transiciones en elementos interactivos"
+      ],
+      "tools": ["Next.js", "React", "CSS Grid"]
+    },
+    {
+      "slug": "el-oso",
+      "title": "Juego El OSO",
+      "description": "Juego en el que debes formar la mayor cantidad de palabras OSO posible antes de que te gane el computador. ¿Podrás ganarle?",
+      "live": "https://el-oso.vercel.app",
+      "source": "https://github.com/bryangamas/el-oso/",
+      "features": [
+        "Animaciones por cada punto ganado",
+        "Implementación del algoritmo “primero el mejor”",
+        "Mobile First"
+      ],
+      "tools": ["React", "API Context", "Best First"]
+    }
+  ]
 }

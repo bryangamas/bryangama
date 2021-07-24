@@ -7,4 +7,8 @@ export const ProjectsContainer = styled(StyledContainer).attrs(() => ({
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  & > * {
+    margin-bottom: 3rem;
+  }
 `;
