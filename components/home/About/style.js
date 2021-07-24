@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import StyledContainer from "@components/Container/style";
+import SkillsList from "@components/SkillsList";
 
 export const AboutContent = styled(StyledContainer).attrs(() => ({
   id: "about",
@@ -20,3 +21,6 @@ export const AboutMe = styled.div`
 `;
 
 export const AboutSkills = styled.div``;
+export const FullSkillsList = styled(SkillsList)`
+  margin-left: 3rem;
+`;

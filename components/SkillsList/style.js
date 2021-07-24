@@ -2,11 +2,11 @@ const { default: styled } = require("styled-components");
 
 export const StyledSkillsList = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: ${({ center }) => (center ? "center" : "flex-start")};
   flex-wrap: wrap;
 
   & > li {
-    margin: 0 1.4rem;
+    margin: 0 0.8rem;
   }
 
   @media (min-width: 700px) {

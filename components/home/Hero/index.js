@@ -22,7 +22,7 @@ const Hero = ({ heroData: t }) => {
           <MainTitle>{t.profileName}</MainTitle>
           <Subtitle>{t.role}</Subtitle>
           <Paragraph>{t.description}</Paragraph>
-          <SkillsList skillsList={mainSkills} />
+          <SkillsList center skillsList={mainSkills} />
         </MainInfo>
         <ProfilePhoto>
           <Image
@@ -33,7 +33,7 @@ const Hero = ({ heroData: t }) => {
           />
         </ProfilePhoto>
       </HeroContent>
-      <Icon brightIfDark ratio={0.7} src="/icons/down.svg" />
+      <Icon brightIfDark ratio={0.7} src="/icons/down.svg" href="#about" />
     </HeroContainer>
   );
 };

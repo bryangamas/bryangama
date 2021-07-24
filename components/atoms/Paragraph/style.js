@@ -14,6 +14,6 @@ export const ParagraphWrapper = styled.div`
   align-items: center;
 
   & > * {
-    margin-left: 5%;
+    margin-left: 3.6rem;
   }
 `;

@@ -1,8 +1,10 @@
 import React from "react";
 import { SectionTitle } from "@components/atoms/Title";
-import { AboutContent, AboutMe, AboutSkills } from "./style";
+import { AboutContent, AboutMe, AboutSkills, FullSkillsList } from "./style";
 import Paragraph from "@components/atoms/Paragraph";
 import Separator from "@components/atoms/Separator";
+
+import fullTools from "@constants/fulltools.json";
 
 const About = ({ aboutData: t }) => {
   let skillNumber = 1;
@@ -18,9 +20,12 @@ const About = ({ aboutData: t }) => {
         ))}
       </AboutMe>
 
+      <Separator />
+
       <AboutSkills>
         <SectionTitle>{t.skillsTitle}</SectionTitle>
         <Separator />
+        <FullSkillsList skillsList={fullTools} />
       </AboutSkills>
     </AboutContent>
   );

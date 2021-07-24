@@ -3,35 +3,32 @@ import styled from "styled-components";
 import { StyledParagraph } from "../Paragraph/style";
 
 const IconAsImg = styled.img`
-  min-width: 24px;
-  max-width: 28px;
-  min-height: 20px;
-  max-height: 24px;
+  width: 2.4rem;
+  height: 2.4rem;
   ${(props) => extraAttr(props)}
 
   @media (min-width: 700px) {
-    min-width: 35px;
-    max-width: 35px;
-    max-height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 `;
 
 const IconAsMask = styled.i`
   display: inline-block;
-  mask-image: url(${({ src }) => src});
+  mask-image: url(${({ src, mask }) => (mask ? mask : src)});
   mask-size: contain;
   mask-position: center;
   mask-repeat: no-repeat;
   background: ${({ theme, brighter }) => {
     return brighter ? theme.text.primary : theme.text.secondary;
   }};
-  width: 24px;
-  height: ${({ ratio }) => (ratio ? "" + 24 * ratio + "px" : "24px")};
+  width: 2.4rem;
+  height: 2.4rem;
   ${(props) => extraAttr(props)}
 
   @media (min-width: 700px) {
-    width: 35px;
-    height: ${({ ratio }) => (ratio ? "" + 35 * ratio + "px" : "35px")};
+    width: 3.5rem;
+    height: 3.5rem;
   }
 `;
 
@@ -53,15 +50,23 @@ const StyledIcon = (props) => {
 
 export const IconCaption = styled(StyledParagraph)`
   position: absolute;
-  top: calc(50% + 0.8rem);
+  top: calc(100%);
   left: 50%;
   transform: translateX(-50%);
 `;
 
 export const IconWithCaptionContainer = styled.div`
   position: relative;
-  display: flex;
-  flex-direction: column;
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-bottom: 2.8rem;
+
+  & > ${IconAsImg}, & > ${IconAsMask} {
+    position: absolute;
+    width: 3.6rem;
+    height: 3.6rem;
+    left: 0;
+  }
 
   & > ${IconCaption} {
     opacity: 0;
@@ -70,10 +75,6 @@ export const IconWithCaptionContainer = styled.div`
 
   & > ${IconAsImg} {
     opacity: 0;
-  }
-
-  & > ${IconAsMask} {
-    transform: translateY(-100%);
   }
 
   &:hover {
@@ -90,6 +91,19 @@ export const IconWithCaptionContainer = styled.div`
     & > ${IconCaption} {
       opacity: 1;
       transition: opacity 200ms ease-in;
+    }
+  }
+
+  @media (min-width: 700px) {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-bottom: 4rem;
+
+    & > ${IconAsImg}, & > ${IconAsMask} {
+      position: absolute;
+      width: 5.6rem;
+      height: 5.6rem;
+      left: 0;
     }
   }
 `;

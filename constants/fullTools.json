@@ -1,1 +1,85 @@
-[]
+[
+  {
+    "name": "HTML",
+    "icon": "html",
+    "mask": true
+  },
+  {
+    "name": "CSS",
+    "icon": "css",
+    "mask": true
+  },
+  {
+    "name": "JavaScript",
+    "icon": "js",
+    "mask": true
+  },
+  {
+    "name": "TypeScript",
+    "icon": "ts",
+    "mask": true
+  },
+  {
+    "name": "React",
+    "icon": "react"
+  },
+  {
+    "name": "Figma",
+    "icon": "figma"
+  },
+  {
+    "name": "Git",
+    "icon": "git"
+  },
+  {
+    "name": "Tailwind CSS",
+    "icon": "tailwind"
+  },
+  {
+    "name": "Next.js",
+    "icon": "nextjs"
+  },
+  {
+    "name": "Node.js",
+    "icon": "nodejs"
+  },
+  {
+    "name": "SQL Server",
+    "icon": "sqlserver"
+  },
+  {
+    "name": "Oracle",
+    "icon": "oracle"
+  },
+  {
+    "name": "MySQL",
+    "icon": "mysql"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "mongodb"
+  },
+  {
+    "name": "Java",
+    "icon": "java"
+  },
+  {
+    "name": "Python",
+    "icon": "python"
+  },
+  {
+    "name": "Jest",
+    "icon": "jest",
+    "mask": true
+  },
+  {
+    "name": "Angular",
+    "icon": "angular",
+    "mask": true
+  },
+  {
+    "name": "Firebase",
+    "icon": "firebase",
+    "mask": true
+  }
+]

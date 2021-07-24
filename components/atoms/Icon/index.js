@@ -7,7 +7,15 @@ import StyledIcon, {
 import Link from "next/link";
 import useDarkMode from "use-dark-mode";
 
-const Icon = ({ src, href, onClick, brightIfDark, brigherIfDark, ratio }) => {
+const Icon = ({
+  src,
+  href,
+  blank,
+  onClick,
+  brightIfDark,
+  brigherIfDark,
+  ratio,
+}) => {
   const { value: darkMode } = useDarkMode();
   const body = (
     <StyledIcon
@@ -22,7 +30,7 @@ const Icon = ({ src, href, onClick, brightIfDark, brigherIfDark, ratio }) => {
   if (href) {
     return (
       <Link href={href}>
-        <a rel="noopener" target="_blank">
+        <a rel="noopener" target={blank ? "_blank" : null}>
           {body}
         </a>
       </Link>

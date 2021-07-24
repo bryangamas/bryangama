@@ -6,8 +6,8 @@ const StyledContainer = styled.section`
   background-color: ${({ theme, secondary }) =>
     secondary ? theme.bg.secondary : theme.bg.primary};
   text-align: ${({ center }) => (center ? "center" : "left")};
-  padding-top: 9.5rem;
-  padding-bottom: 4rem;
+  padding-top: 8.5rem;
+  padding-bottom: 2rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
 
