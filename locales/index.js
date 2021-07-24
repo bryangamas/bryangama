@@ -1,6 +1,10 @@
-import en from "./en.json";
-import es from "./es.json";
+import constants from "./constants";
+import eng from "./en.json";
+import esp from "./es.json";
 
-const locales = { en, es };
+const locales = {
+  en: { ...constants, ...eng },
+  es: { ...constants, ...esp },
+};
 
 export default locales;

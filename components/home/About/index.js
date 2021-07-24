@@ -4,9 +4,7 @@ import { AboutContent, AboutMe, AboutSkills, FullSkillsList } from "./style";
 import Paragraph from "@components/atoms/Paragraph";
 import Separator from "@components/atoms/Separator";
 
-import fullTools from "@constants/fulltools.json";
-
-const About = ({ aboutData: t }) => {
+const About = ({ aboutData: t, fullTools }) => {
   let skillNumber = 1;
   return (
     <AboutContent secondary>

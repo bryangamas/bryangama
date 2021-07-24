@@ -3,7 +3,6 @@ import Paragraph from "@components/atoms/Paragraph";
 import Image from "next/image";
 
 import profilePhoto from "@public/imgs/profile.png";
-import mainSkills from "@constants/mainTools.json";
 
 import { Title, MainTitle, Subtitle } from "@components/atoms/Title";
 import Icon from "@components/atoms/Icon";
@@ -12,7 +11,7 @@ import SkillsList from "@components/SkillsList";
 
 import { HeroContainer, HeroContent, MainInfo, ProfilePhoto } from "./style";
 
-const Hero = ({ heroData: t }) => {
+const Hero = ({ heroData: t, mainTools }) => {
   return (
     <HeroContainer center>
       <SocialMedia />
@@ -22,7 +21,7 @@ const Hero = ({ heroData: t }) => {
           <MainTitle>{t.profileName}</MainTitle>
           <Subtitle>{t.role}</Subtitle>
           <Paragraph>{t.description}</Paragraph>
-          <SkillsList center skillsList={mainSkills} />
+          <SkillsList center skillsList={mainTools} />
         </MainInfo>
         <ProfilePhoto>
           <Image

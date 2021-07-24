@@ -13,7 +13,6 @@ import {
 } from "./style";
 
 const ProjectCard = ({ project: p }) => {
-  console.log(`/imgs/projects/${p.slug}.png`);
   return (
     <StyledProjectCard>
       <ProjectPhoto>

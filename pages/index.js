@@ -5,12 +5,13 @@ import Layout from "@components/Layout";
 import locales from "../locales";
 
 export default function MainPage({ content }) {
-  const { navData, heroData, aboutData, projectsData } = content;
+  const { navData, heroData, aboutData, projectsData, mainTools, fullTools } =
+    content;
 
   return (
     <Layout navData={navData}>
-      <Hero heroData={heroData} />
-      <About aboutData={aboutData} />
+      <Hero heroData={heroData} mainTools={mainTools} />
+      <About aboutData={aboutData} fullTools={fullTools} />
       <Projects projectsData={projectsData} />
     </Layout>
   );
