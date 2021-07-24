@@ -28,13 +28,7 @@ export const MainInfo = styled.div`
   margin: 0 5%;
 
   & > * {
-    margin-bottom: 2%;
-  }
-
-  @media (min-width: 700px) {
-    & > * {
-      margin-bottom: 4%;
-    }
+    margin-bottom: 5%;
   }
 `;
 

@@ -1,5 +1,9 @@
 import React from "react";
-import StyledIcon from "./style";
+import StyledIcon, {
+  IconWithCaptionContainer,
+  StyledIconWithCaption,
+  IconCaption,
+} from "./style";
 import Link from "next/link";
 import useDarkMode from "use-dark-mode";
 
@@ -25,6 +29,15 @@ const Icon = ({ src, href, onClick, brightIfDark, brigherIfDark, ratio }) => {
     );
   }
   return body;
+};
+
+export const IconWithCaption = (props) => {
+  return (
+    <IconWithCaptionContainer>
+      <StyledIconWithCaption {...props} />
+      <IconCaption>{props.caption}</IconCaption>
+    </IconWithCaptionContainer>
+  );
 };
 
 export default Icon;

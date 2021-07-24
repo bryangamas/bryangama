@@ -11,12 +11,12 @@ const SocialMedia = () => {
         href="https://github.com/bryangamas"
       />
       <Icon
-        src="/icons/socialMedia/linkedin.svg"
-        href="https://linkedin.com/in/bgamas"
-      />
-      <Icon
         src="/icons/socialMedia/twitter.svg"
         href="https://twitter.com/bgamas_"
+      />
+      <Icon
+        src="/icons/socialMedia/linkedin.svg"
+        href="https://linkedin.com/in/bgamas"
       />
     </StyledSocialMedia>
   );

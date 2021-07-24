@@ -10,10 +10,10 @@ const StyledSocialMediaDesktop = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 4.2rem;
     transform: translateY(-50%);
 
     & > * {
-      margin-bottom: 4.2rem;
       opacity: 0.8;
     }
 
