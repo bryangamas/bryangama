@@ -34,28 +34,28 @@
     {
       "slug": "loopstudios",
       "title": "Loopstudios Landing Page",
-      "description": "Página de inicio 100% responsiva para una empresa de realidad virtual.",
+      "description": "100% responsive landing page for a virtual reality company. ",
       "live": "https://loopstudios-landing-page-bay.vercel.app",
       "source": "https://github.com/bryangamas/loopstudios-landing-page",
       "features": [
         "Mobile First",
         "Pixel Perfect",
-        "Transiciones en elementos interactivos"
+        "Transitions in interactive elements"
       ],
       "tools": ["Next.js", "React", "CSS Grid"]
     },
     {
       "slug": "el-oso",
-      "title": "Juego El OSO",
-      "description": "Juego en el que debes formar la mayor cantidad de palabras OSO posible antes de que te gane el computador. ¿Podrás ganarle?",
+      "title": "The OSO Game",
+      "description": "Game in which you must form as many “OSO” words as possible before the computer beats you. Can you beat it?",
       "live": "https://el-oso.vercel.app",
       "source": "https://github.com/bryangamas/el-oso/",
       "features": [
-        "Animaciones por cada punto ganado",
-        "Implementación del algoritmo “primero el mejor”",
+        "Animations for each point earned",
+        "Implementation of the Best-First algorithm",
         "Mobile First"
       ],
-      "tools": ["React", "API Context", "Best First"]
+      "tools": ["React", "API Context", "Best-First"]
     }
   ]
 }

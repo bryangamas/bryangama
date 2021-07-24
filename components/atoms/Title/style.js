@@ -29,7 +29,7 @@ const line = (theme) => {
 };
 
 const StyledTitle = styled.h2`
-  font-size: ${({ bigger }) => (bigger ? "2.8rem" : "1.6rem")};
+  font-size: ${({ bigger }) => (bigger ? "2.8rem" : "2rem")};
   width: 100%;
   color: ${(props) => {
     const { theme, highlight, auxiliary } = props;
@@ -44,7 +44,7 @@ const StyledTitle = styled.h2`
   }}
 
   @media (min-width: 700px) {
-    font-size: ${({ bigger }) => (bigger ? "5.6rem" : "2.8rem")};
+    font-size: ${({ bigger }) => (bigger ? "5.6rem" : "3.2rem")};
   }
 `;
 

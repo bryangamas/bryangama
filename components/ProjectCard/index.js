@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   FeatureItem,
   FeatureList,
@@ -12,10 +13,18 @@ import {
 } from "./style";
 
 const ProjectCard = ({ project: p }) => {
-  console.log({ p });
+  console.log(`/imgs/projects/${p.slug}.png`);
   return (
     <StyledProjectCard>
-      <ProjectPhoto src={`/imgs/projects/${p.slug}.png`} />
+      <ProjectPhoto>
+        <Image
+          src={`/imgs/projects/${p.slug}.png`}
+          alt={p.title}
+          width={960}
+          height={512}
+          layout="responsive"
+        />
+      </ProjectPhoto>
       <ProjectInfo>
         <ProjectTitle>{p.title}</ProjectTitle>
         <ProjectDescription>{p.description}</ProjectDescription>

@@ -11,4 +11,10 @@ export const ProjectsContainer = styled(StyledContainer).attrs(() => ({
   & > * {
     margin-bottom: 3rem;
   }
+
+  @media (min-width: 700px) {
+    & > * {
+      margin-bottom: 6rem;
+    }
+  }
 `;
