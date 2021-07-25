@@ -11,7 +11,7 @@ const Paragraph = ({ children, icon, className }) => {
       </ParagraphWrapper>
     );
 
-  return <StyledParagraph>{children}</StyledParagraph>;
+  return <StyledParagraph className={className}>{children}</StyledParagraph>;
 };
 
 export default Paragraph;

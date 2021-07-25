@@ -7,6 +7,7 @@ import {
   ContactContainer,
   ContactContent,
   ContactForm,
+  SendButton,
 } from "./style";
 
 const Contact = ({ contactData: t }) => {
@@ -19,6 +20,7 @@ const Contact = ({ contactData: t }) => {
           {Object.entries(t.fields).map(([key, field]) => {
             return <FormField key={key} field={{ ...field, id: key }} />;
           })}
+          <SendButton>Enviar</SendButton>
         </ContactForm>
       </ContactContent>
       <Separator />

@@ -6,7 +6,7 @@ const Footer = ({ footerData }) => {
   return (
     <StyledFooter>
       <FooterCredits>{footerData.credits}</FooterCredits>
-      <Icon src="/icons/up.svg" href="#home" />
+      <Icon src="/icons/up.svg" href="#home" brightIfDark ratio={0.7} />
     </StyledFooter>
   );
 };

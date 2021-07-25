@@ -78,7 +78,7 @@
         "typeError": "Wrong email format"
       },
       "message": {
-        "label": "Mensaje",
+        "label": "Message",
         "placeholder": "You can be as specific as you want... :)",
         "type": "textarea"
       }

@@ -70,7 +70,7 @@ export const ProjectDescription = styled.p`
 
 export const FeatureList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, 186px);
   grid-row-gap: 0.8rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -105,6 +105,7 @@ export const FeatureItem = ({ children }) => {
 
 export const ToolList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   font-size: var(--small-font-size);
 
   & > li {

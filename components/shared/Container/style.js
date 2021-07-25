@@ -16,7 +16,7 @@ const StyledContainer = styled.section`
 
   @media (min-width: 700px) {
     text-align: left;
-    padding-right: 7rem;
+    padding-right: 8rem;
   }
 
   & > * {
