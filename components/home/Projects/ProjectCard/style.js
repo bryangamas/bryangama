@@ -1,5 +1,5 @@
-import Paragraph from "@components/atoms/Paragraph";
-import { StyledParagraph } from "@components/atoms/Paragraph/style";
+import Paragraph from "@components/shared/Paragraph";
+import { StyledParagraph } from "@components/shared/Paragraph/style";
 import styled from "styled-components";
 
 export const StyledProjectCard = styled.article`

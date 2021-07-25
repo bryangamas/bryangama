@@ -1,4 +1,4 @@
-import StyledContainer from "@components/Container/style";
+import StyledContainer from "@components/shared/Container/style";
 import styled from "styled-components";
 
 export const ProjectsContainer = styled(StyledContainer).attrs(() => ({

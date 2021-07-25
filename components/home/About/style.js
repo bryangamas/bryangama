@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import StyledContainer from "@components/Container/style";
-import SkillsList from "@components/SkillsList";
+import StyledContainer from "@components/shared/Container/style";
+import SkillsList from "@components/shared/SkillsList";
 
 export const AboutContent = styled(StyledContainer).attrs(() => ({
   id: "about",

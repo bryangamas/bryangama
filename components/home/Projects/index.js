@@ -1,5 +1,5 @@
-import { SectionTitle } from "@components/atoms/Title";
-import ProjectCard from "@components/ProjectCard";
+import { SectionTitle } from "@components/shared/Title";
+import ProjectCard from "@components/home/Projects/ProjectCard";
 import React from "react";
 import { ProjectsContainer } from "./style";
 

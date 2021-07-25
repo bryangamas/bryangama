@@ -1,4 +1,4 @@
-import Paragraph from "@components/atoms/Paragraph";
+import Paragraph from "@components/shared/Paragraph";
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`

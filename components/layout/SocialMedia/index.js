@@ -1,6 +1,6 @@
 import React from "react";
 import StyledSocialMedia from "./style";
-import Icon from "@components/atoms/Icon";
+import Icon from "@components/shared/Icon";
 
 const SocialMedia = () => {
   return (

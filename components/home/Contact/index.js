@@ -1,6 +1,6 @@
-import Separator from "@components/atoms/Separator";
-import { SectionTitle } from "@components/atoms/Title";
-import FormField from "@components/FormField";
+import Separator from "@components/shared/Separator";
+import { SectionTitle } from "@components/shared/Title";
+import FormField from "@components/shared/FormField";
 import React from "react";
 import {
   ContactIntroduction,

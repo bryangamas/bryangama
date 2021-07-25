@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StyledContainer from "@components/Container/style";
+import StyledContainer from "@components/shared/Container/style";
 
 export const HeroContainer = styled(StyledContainer).attrs(() => ({
   id: "home",

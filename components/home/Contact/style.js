@@ -1,5 +1,5 @@
-import Paragraph from "@components/atoms/Paragraph";
-import StyledContainer from "@components/Container/style";
+import Paragraph from "@components/shared/Paragraph";
+import StyledContainer from "@components/shared/Container/style";
 import styled from "styled-components";
 
 export const ContactContainer = styled(StyledContainer).attrs(() => ({

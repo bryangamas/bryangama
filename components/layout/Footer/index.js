@@ -1,4 +1,4 @@
-import Icon from "@components/atoms/Icon";
+import Icon from "@components/shared/Icon";
 import React from "react";
 import { StyledFooter, FooterCredits } from "./style";
 

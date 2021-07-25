@@ -1,8 +1,8 @@
 import React from "react";
-import { SectionTitle } from "@components/atoms/Title";
+import { SectionTitle } from "@components/shared/Title";
 import { AboutContent, AboutMe, AboutSkills, FullSkillsList } from "./style";
-import Paragraph from "@components/atoms/Paragraph";
-import Separator from "@components/atoms/Separator";
+import Paragraph from "@components/shared/Paragraph";
+import Separator from "@components/shared/Separator";
 
 const About = ({ aboutData: t, fullTools }) => {
   let skillNumber = 1;

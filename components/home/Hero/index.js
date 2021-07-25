@@ -1,13 +1,13 @@
 import React from "react";
-import Paragraph from "@components/atoms/Paragraph";
+import Paragraph from "@components/shared/Paragraph";
 import Image from "next/image";
 
 import profilePhoto from "@public/imgs/profile.png";
 
-import { Title, MainTitle, Subtitle } from "@components/atoms/Title";
-import Icon from "@components/atoms/Icon";
-import SocialMedia from "@components/SocialMedia";
-import SkillsList from "@components/SkillsList";
+import { Title, MainTitle, Subtitle } from "@components/shared/Title";
+import Icon from "@components/shared/Icon";
+import SocialMedia from "@components/layout/SocialMedia";
+import SkillsList from "@components/shared/SkillsList";
 
 import { HeroContainer, HeroContent, MainInfo, ProfilePhoto } from "./style";
 

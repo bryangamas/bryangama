@@ -1,4 +1,4 @@
-import StyledIcon from "@components/atoms/Icon/style";
+import StyledIcon from "@components/shared/Icon/style";
 import styled from "styled-components";
 import Navigation from "../Navigation";
 
