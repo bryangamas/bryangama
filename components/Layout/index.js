@@ -1,8 +1,9 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 
-const Layout = ({ children, navData }) => {
+const Layout = ({ children, navData, footerData }) => {
   return (
     <>
       <Head>
@@ -12,6 +13,7 @@ const Layout = ({ children, navData }) => {
       </Head>
       <Header navData={navData} />
       {children}
+      <Footer footerData={footerData} />
     </>
   );
 };

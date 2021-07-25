@@ -5,10 +5,7 @@ import SkillsList from "@components/SkillsList";
 export const AboutContent = styled(StyledContainer).attrs(() => ({
   id: "about",
 }))`
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
 `;
 
 export const AboutMe = styled.div`

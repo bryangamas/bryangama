@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const StyledContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   min-width: 320px;
   background-color: ${({ theme, secondary }) =>

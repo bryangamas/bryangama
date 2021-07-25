@@ -3,10 +3,11 @@ import ProjectCard from "@components/ProjectCard";
 import React from "react";
 import { ProjectsContainer } from "./style";
 
-const Projects = ({ projectsData: projects }) => {
+const Projects = ({ projectsData: t }) => {
+  const { projects } = t;
   return (
     <ProjectsContainer>
-      <SectionTitle>Proyectos</SectionTitle>
+      <SectionTitle>{t.title}</SectionTitle>
       {projects.map((p) => {
         return <ProjectCard key={p.slug} project={p} />;
       })}

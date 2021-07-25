@@ -27,7 +27,7 @@ export const StyledProjectCard = styled.article`
   }
 `;
 
-export const ProjectPhoto = styled.div`
+export const ProjectPhoto = styled.figure`
   width: 100%;
   max-width: 600px;
 
