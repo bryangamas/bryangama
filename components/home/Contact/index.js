@@ -20,7 +20,7 @@ const Contact = ({ contactData: t }) => {
           {Object.entries(t.fields).map(([key, field]) => {
             return <FormField key={key} field={{ ...field, id: key }} />;
           })}
-          <SendButton>Enviar</SendButton>
+          <SendButton>{t.send}</SendButton>
         </ContactForm>
       </ContactContent>
       <Separator />

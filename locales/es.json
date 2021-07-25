@@ -64,6 +64,7 @@
   "contactData": {
     "title": "Contacto",
     "introduction": "Si estás interesado en contratarme o contactarte conmigo, puedes usar el siguiente formulario.",
+    "send": "Enviar",
     "requiredMessage": "Requerido",
     "fields": {
       "name": {

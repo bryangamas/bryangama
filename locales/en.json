@@ -65,6 +65,7 @@
     "title": "Contact",
     "introduction": "If you are interested in hiring or contacting me, you can use the following form.",
     "requiredMessage": "Required",
+    "send": "Send",
     "fields": {
       "name": {
         "label": "Name",
