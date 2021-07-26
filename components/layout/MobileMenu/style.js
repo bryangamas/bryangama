@@ -16,7 +16,7 @@ export const MobileMenuContainer = styled.aside`
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  padding: 6rem 3rem;
+  padding: 6rem 5.4rem;
 
   ${({ menuVisible }) => (!menuVisible ? "transform: translate(100vw)" : "")};
   transition: transform 0.3s ease-in;
