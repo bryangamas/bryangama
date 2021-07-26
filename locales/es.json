@@ -75,6 +75,7 @@
     "introduction": "Si estás interesado en contratarme o contactarte conmigo, puedes usar el siguiente formulario.",
     "send": "Enviar",
     "requiredMessage": "Requerido",
+    "successMessage": "¡Gracias, {NAME}! Me estaré comunicando pronto",
     "fields": {
       "name": {
         "label": "Nombre",
@@ -91,7 +92,8 @@
       "message": {
         "label": "Mensaje",
         "placeholder": "Puedes ser tan específico como desees :)",
-        "type": "textarea"
+        "type": "textarea",
+        "required": true
       }
     }
   },

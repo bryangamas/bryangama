@@ -4,14 +4,30 @@ import { StyledContactForm, SendButton } from "./style";
 import { Formik } from "formik";
 import { getValidationSchema } from "utils/validationUtil";
 
-const ContactForm = ({ fields, sendMessage, requiredMessage }) => {
+const ContactForm = ({
+  fields,
+  sendMessage,
+  requiredMessage,
+  setSucessOptions,
+}) => {
   const { validation, initialValues } = getValidationSchema(
     fields,
     requiredMessage
   );
 
-  const handleSubmit = (e) => {
-    console.log(e);
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    await fetch("/api/mail", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    });
+
+    setSubmitting(false);
+    resetForm(true);
+    setSucessOptions({
+      name: values.name,
+      showSucessMessage: true,
+    });
   };
 
   return (

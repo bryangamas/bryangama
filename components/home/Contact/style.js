@@ -6,7 +6,8 @@ export const ContactContainer = styled(StyledContainer).attrs(() => ({
   secondary: true,
   id: "contact",
 }))`
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-bottom: 7.5rem;
 `;
 
 export const ContactContent = styled.div`
@@ -17,7 +18,6 @@ export const ContactContent = styled.div`
     gap: 2rem;
     padding-left: 6%;
     padding-right: 4%;
-    margin-bottom: 4rem;
 
     & > * {
       flex: 1 1 0;
@@ -30,5 +30,22 @@ export const ContactIntroduction = styled(Paragraph).attrs(() => ({
 }))`
   & > * {
     margin: 0 1.8rem;
+  }
+`;
+
+export const SuccessMessage = styled(Paragraph)`
+  display: ${({ showSucessMessage }) => (showSucessMessage ? "block" : "none")};
+  /* position: absolute; */
+  z-index: 2;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  color: #212426;
+  /* bottom: 7.5rem; */
+
+  @media (min-width: 700px) {
+    /* bottom: initial;
+    top: 20%; */
   }
 `;

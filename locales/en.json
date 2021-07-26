@@ -75,6 +75,7 @@
     "introduction": "If you are interested in hiring or contacting me, you can use the following form.",
     "requiredMessage": "Required",
     "send": "Send",
+    "successMessage": "Thanks, {NAME}! I'll be in touch soon.",
     "fields": {
       "name": {
         "label": "Name",
@@ -91,7 +92,8 @@
       "message": {
         "label": "Message",
         "placeholder": "You can be as specific as you want... :)",
-        "type": "textarea"
+        "type": "textarea",
+        "required": true
       }
     }
   },
