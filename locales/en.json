@@ -32,13 +32,20 @@
   },
   "projectsData": {
     "title": "Projects",
+    "labels": {
+      "live": "Live",
+      "source": "Source",
+      "design": "Design"
+    },
     "projects": [
       {
         "slug": "loopstudios",
         "title": "Loopstudios Landing Page",
         "description": "100% responsive landing page for a virtual reality company. ",
-        "live": "https://loopstudios-site.vercel.app",
-        "source": "https://github.com/bryangamas/loopstudios-landing-page",
+        "links": {
+          "live": "https://loopstudios-site.vercel.app",
+          "source": "https://github.com/bryangamas/loopstudios-landing-page"
+        },
         "features": [
           "Mobile First",
           "Pixel Perfect",
@@ -50,8 +57,10 @@
         "slug": "el-oso",
         "title": "The OSO Game",
         "description": "Game in which you must form as many “OSO” words as possible before the computer beats you. Can you beat it?",
-        "live": "https://el-oso.vercel.app",
-        "source": "https://github.com/bryangamas/el-oso/",
+        "links": {
+          "live": "https://el-oso.vercel.app",
+          "source": "https://github.com/bryangamas/el-oso/"
+        },
         "features": [
           "Animations for each point earned",
           "Implementation of the Best-First algorithm",
