@@ -12,6 +12,7 @@ const StyledSocialMediaDesktop = styled.section`
     justify-content: space-between;
     gap: 4.2rem;
     transform: translateY(-50%);
+    z-index: 1;
   }
 `;
 
