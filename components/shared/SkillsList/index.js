@@ -1,4 +1,4 @@
-import { IconWithCaption } from "@components/atoms/Icon";
+import { IconWithCaption } from "@components/shared/Icon";
 import React from "react";
 import { StyledSkillsList, SkillItem } from "./style";
 

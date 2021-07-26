@@ -1,6 +1,8 @@
-import Paragraph from "@components/atoms/Paragraph";
-import { StyledParagraph } from "@components/atoms/Paragraph/style";
+import Paragraph from "@components/shared/Paragraph";
+import { StyledParagraph } from "@components/shared/Paragraph/style";
 import styled from "styled-components";
+import Image from "next/image";
+import { ProjectOptionsContainer } from "../ProjectOptions/style";
 
 export const StyledProjectCard = styled.article`
   --big-font-size: 1.6rem;
@@ -13,6 +15,8 @@ export const StyledProjectCard = styled.article`
   background-color: ${({ theme }) =>
     theme.isDarkMode ? theme.bg.secondary : "#fff"};
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: ${({ theme }) => theme.shadow.general};
 
   @media (min-width: 700px) {
     flex-direction: row;
@@ -27,12 +31,38 @@ export const StyledProjectCard = styled.article`
   }
 `;
 
-export const ProjectPhoto = styled.div`
+export const ProjectPhoto = styled.figure`
+  position: relative;
   width: 100%;
   max-width: 600px;
+  background-color: inherit;
+  transition: background-color 0.3s;
+
+  & > div > img {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  & ${ProjectOptionsContainer} {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: ${({ theme }) =>
+      theme.isDarkMode ? theme.bg.inset : theme.bg.secondary};
+
+    & > div > img {
+      opacity: 0.5;
+    }
+
+    & ${ProjectOptionsContainer} {
+      opacity: 1;
+    }
+  }
 
   @media (min-width: 700px) {
-    & > * {
+    & > div {
       transform: translateY(-50%);
       top: 50%;
     }
@@ -70,7 +100,7 @@ export const ProjectDescription = styled.p`
 
 export const FeatureList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, 186px);
   grid-row-gap: 0.8rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -105,16 +135,19 @@ export const FeatureItem = ({ children }) => {
 
 export const ToolList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   font-size: var(--small-font-size);
-
-  & > li {
-    margin-right: 1rem;
-  }
 `;
 
 export const ToolItem = styled.li`
   color: ${({ theme }) => theme.text.primary};
   background: ${({ theme }) => theme.bg.primary};
   padding: 0.4rem 0.8rem;
+  margin-right: 1rem;
   border-radius: 8px;
+  box-shadow: ${({ theme }) => theme.shadow.general};
+
+  &:hover {
+    background: ${({ theme }) => theme.bg.secondary};
+  }
 `;

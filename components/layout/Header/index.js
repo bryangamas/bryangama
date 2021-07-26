@@ -1,6 +1,6 @@
 import React from "react";
-import Icon from "@components/atoms/Icon";
-import PageOptions from "@components/PageOptions";
+import Icon from "@components/shared/Icon";
+import PageOptions from "../PageOptions";
 import { StyledHeader, HamburguerMenu, FullMenu } from "./style";
 
 const Header = ({ navData }) => {

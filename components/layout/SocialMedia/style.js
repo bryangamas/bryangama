@@ -12,15 +12,6 @@ const StyledSocialMediaDesktop = styled.section`
     justify-content: space-between;
     gap: 4.2rem;
     transform: translateY(-50%);
-
-    & > * {
-      opacity: 0.8;
-    }
-
-    & > *:hover {
-      opacity: 1;
-      transition: opacity 0.2s ease-in;
-    }
   }
 `;
 

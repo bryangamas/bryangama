@@ -33,7 +33,14 @@ const IconAsMask = styled.i`
 `;
 
 const extraAttr = ({ onClick, href }) => {
-  return onClick || href ? "cursor: pointer;" : "";
+  return onClick || href
+    ? `cursor: pointer;
+      opacity: 1;
+      :hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in;
+      };`
+    : "";
 };
 
 const StyledIcon = (props) => {

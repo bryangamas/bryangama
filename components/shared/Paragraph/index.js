@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledParagraph, ParagraphWrapper } from "./style";
-import Icon from "@components/atoms/Icon";
+import Icon from "@components/shared/Icon";
 
 const Paragraph = ({ children, icon, className }) => {
   if (icon)
@@ -11,7 +11,7 @@ const Paragraph = ({ children, icon, className }) => {
       </ParagraphWrapper>
     );
 
-  return <StyledParagraph>{children}</StyledParagraph>;
+  return <StyledParagraph className={className}>{children}</StyledParagraph>;
 };
 
 export default Paragraph;

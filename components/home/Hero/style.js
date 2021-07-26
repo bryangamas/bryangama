@@ -1,14 +1,11 @@
 import styled from "styled-components";
-import StyledContainer from "@components/Container/style";
+import StyledContainer from "@components/shared/Container/style";
 
 export const HeroContainer = styled(StyledContainer).attrs(() => ({
   id: "home",
 }))`
-  position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  position: relative;
 `;
 
 export const HeroContent = styled.main`

@@ -30,32 +30,71 @@
       }
     ]
   },
-  "projectsData": [
-    {
-      "slug": "loopstudios",
-      "title": "Loopstudios Landing Page",
-      "description": "Página de inicio 100% responsiva para una empresa de realidad virtual.",
-      "live": "https://loopstudios-landing-page-bay.vercel.app",
-      "source": "https://github.com/bryangamas/loopstudios-landing-page",
-      "features": [
-        "Mobile First",
-        "Pixel Perfect",
-        "Transiciones en elementos interactivos"
-      ],
-      "tools": ["Next.js", "React", "CSS Grid"]
+  "projectsData": {
+    "title": "Proyectos",
+    "labels": {
+      "live": "Ver",
+      "source": "Código",
+      "design": "Diseño"
     },
-    {
-      "slug": "el-oso",
-      "title": "Juego El OSO",
-      "description": "Juego en el que debes formar la mayor cantidad de palabras OSO posible antes de que te gane el computador. ¿Podrás ganarle?",
-      "live": "https://el-oso.vercel.app",
-      "source": "https://github.com/bryangamas/el-oso/",
-      "features": [
-        "Animaciones por cada punto ganado",
-        "Implementación del algoritmo “primero el mejor”",
-        "Mobile First"
-      ],
-      "tools": ["React", "API Context", "Best First"]
+    "projects": [
+      {
+        "slug": "loopstudios",
+        "title": "Loopstudios Landing Page",
+        "description": "Página de inicio 100% responsiva para una empresa de realidad virtual.",
+        "links": {
+          "live": "https://loopstudios-site.vercel.app",
+          "source": "https://github.com/bryangamas/loopstudios-landing-page"
+        },
+        "features": [
+          "Mobile First",
+          "Pixel Perfect",
+          "Transiciones en elementos interactivos"
+        ],
+        "tools": ["Next.js", "React", "CSS Grid"]
+      },
+      {
+        "slug": "el-oso",
+        "title": "Juego El OSO",
+        "description": "Juego en el que debes formar la mayor cantidad de palabras OSO posible antes de que te gane el computador. ¿Podrás ganarle?",
+        "links": {
+          "live": "https://el-oso.vercel.app",
+          "source": "https://github.com/bryangamas/el-oso/"
+        },
+        "features": [
+          "Animaciones por cada punto ganado",
+          "Implementación del algoritmo “primero el mejor”",
+          "Mobile First"
+        ],
+        "tools": ["React", "API Context", "Best First"]
+      }
+    ]
+  },
+  "contactData": {
+    "title": "Contacto",
+    "introduction": "Si estás interesado en contratarme o contactarte conmigo, puedes usar el siguiente formulario.",
+    "send": "Enviar",
+    "requiredMessage": "Requerido",
+    "fields": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "John Doe",
+        "required": true
+      },
+      "email": {
+        "label": "Correo",
+        "placeholder": "john_doe@email.com",
+        "type": "email",
+        "typeError": "Formato de correo incorrecto"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Puedes ser tan específico como desees :)",
+        "type": "textarea"
+      }
     }
-  ]
+  },
+  "footerData": {
+    "credits": "Hecho con 💙 por Bryan Gama © 2021"
+  }
 }
