@@ -6,7 +6,8 @@ export const ContactContainer = styled(StyledContainer).attrs(() => ({
   secondary: true,
   id: "contact",
 }))`
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-bottom: 7.5rem;
 `;
 
 export const ContactContent = styled.div`
@@ -17,7 +18,6 @@ export const ContactContent = styled.div`
     gap: 2rem;
     padding-left: 6%;
     padding-right: 4%;
-    margin-bottom: 4rem;
 
     & > * {
       flex: 1 1 0;
@@ -33,38 +33,19 @@ export const ContactIntroduction = styled(Paragraph).attrs(() => ({
   }
 `;
 
-export const ContactForm = styled.form`
-  display: flex;
-  flex-direction: column;
-
-  & > * {
-    margin-bottom: 5%;
-  }
-
-  @media (min-width: 700px) {
-    & > * {
-      margin-top: 4%;
-      margin-bottom: 4%;
-    }
-  }
-`;
-
-export const SendButton = styled.button.attrs(() => ({
-  type: "send",
-}))`
-  align-self: center;
-  margin-top: 6%;
-  padding: 0.8rem 3.2rem;
-  color: ${({ theme }) => theme.bg.primary};
-  background: ${({ theme }) => theme.text.secondary};
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-family: inherit;
-  box-shadow: ${({ theme }) => theme.shadow.general};
+export const SuccessMessage = styled(Paragraph)`
+  display: ${({ showSucessMessage }) => (showSucessMessage ? "block" : "none")};
+  /* position: absolute; */
+  z-index: 2;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  color: #212426;
+  /* bottom: 7.5rem; */
 
   @media (min-width: 700px) {
-    font-size: 1.6rem;
+    /* bottom: initial;
+    top: 20%; */
   }
 `;

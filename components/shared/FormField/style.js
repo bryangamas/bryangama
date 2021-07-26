@@ -19,6 +19,7 @@ export const Input = styled.input.attrs(({ id, type, field }) => ({
 
   &::placeholder {
     font-size: 1.2rem;
+    color: #b0b0b0;
   }
 
   @media (min-width: 700px) {
@@ -53,6 +54,7 @@ export const Label = styled.span`
 `;
 
 export const StyledFormField = styled.label`
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -71,4 +73,13 @@ export const StyledFormField = styled.label`
       flex: 0.8 1 0;
     }
   }
+`;
+
+export const LabelError = styled(Label)`
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  right: 0px;
+  color: ${({ theme }) => theme.text.error};
+  padding: 0px 1rem;
+  align-self: flex-end;
 `;

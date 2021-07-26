@@ -9,6 +9,7 @@ const light = {
     secondary: "#4E6172",
     highlight: "#2B97D9",
     auxiliary: "rgba(78, 97, 114, 0.8);",
+    error: "#BD1414",
   },
 };
 
@@ -24,6 +25,7 @@ const dark = {
     secondary: "#C8D0D7",
     highlight: "#2B97D9",
     auxiliary: "rgba(193, 213, 232, 0.8);",
+    error: "#E46F6F",
   },
 };
 
