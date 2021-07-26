@@ -2,9 +2,9 @@ import React from "react";
 import StyledSocialMedia from "./style";
 import Icon from "@components/shared/Icon";
 
-const SocialMedia = () => {
+const SocialMedia = ({ className, show }) => {
   return (
-    <StyledSocialMedia>
+    <StyledSocialMedia show={show} className={className}>
       <Icon
         src="/icons/socialMedia/github.svg"
         href="https://github.com/bryangamas"

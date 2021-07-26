@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { NavigationItem } from "./style";
 
-const Navigation = ({ className, navData }) => {
+const Navigation = ({ className, navData, onClick }) => {
   return (
     <nav className={className}>
       <ul>
@@ -12,7 +12,7 @@ const Navigation = ({ className, navData }) => {
           return (
             <NavigationItem className={itemClass} key={key}>
               <Link href={`#${key}`}>
-                <a>{text}</a>
+                <a onClick={onClick}>{text}</a>
               </Link>
             </NavigationItem>
           );

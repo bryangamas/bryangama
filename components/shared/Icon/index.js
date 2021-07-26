@@ -15,10 +15,12 @@ const Icon = ({
   brightIfDark,
   brigherIfDark,
   ratio,
+  className,
 }) => {
   const { value: darkMode } = useDarkMode();
   const body = (
     <StyledIcon
+      className={className}
       src={src}
       onClick={onClick}
       href={href}
