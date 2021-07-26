@@ -15,7 +15,7 @@ const MobileMenu = ({
   return (
     <MobileMenuContainer menuVisible={menuVisible}>
       <GlobalStyle menuVisible={menuVisible} />
-      <Navigation navData={navData} />
+      <Navigation navData={navData} onClick={closeMenuMobile} />
       <SocialMedia show />
       <CloseMenuIcon onClick={closeMenuMobile} />
     </MobileMenuContainer>
