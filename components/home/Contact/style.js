@@ -62,6 +62,7 @@ export const SendButton = styled.button.attrs(() => ({
   cursor: pointer;
   font-size: 1.2rem;
   font-family: inherit;
+  box-shadow: ${({ theme }) => theme.shadow.general};
 
   @media (min-width: 700px) {
     font-size: 1.6rem;
