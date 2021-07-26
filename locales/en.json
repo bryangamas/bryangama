@@ -76,7 +76,8 @@
         "label": "Email",
         "placeholder": "john_doe@email.com",
         "type": "email",
-        "typeError": "Wrong email format"
+        "typeError": "Wrong email format",
+        "required": true
       },
       "message": {
         "label": "Message",

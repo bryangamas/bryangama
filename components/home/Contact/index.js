@@ -1,14 +1,8 @@
-import Separator from "@components/shared/Separator";
-import { SectionTitle } from "@components/shared/Title";
-import FormField from "@components/shared/FormField";
 import React from "react";
-import {
-  ContactIntroduction,
-  ContactContainer,
-  ContactContent,
-  ContactForm,
-  SendButton,
-} from "./style";
+import Separator from "@components/shared/Separator";
+import ContactForm from "./ContactForm";
+import { SectionTitle } from "@components/shared/Title";
+import { ContactIntroduction, ContactContainer, ContactContent } from "./style";
 
 const Contact = ({ contactData: t }) => {
   return (
@@ -16,12 +10,11 @@ const Contact = ({ contactData: t }) => {
       <SectionTitle>{t.title}</SectionTitle>
       <ContactContent>
         <ContactIntroduction>{t.introduction}</ContactIntroduction>
-        <ContactForm>
-          {Object.entries(t.fields).map(([key, field]) => {
-            return <FormField key={key} field={{ ...field, id: key }} />;
-          })}
-          <SendButton>{t.send}</SendButton>
-        </ContactForm>
+        <ContactForm
+          fields={t.fields}
+          sendMessage={t.send}
+          requiredMessage={t.requiredMessage}
+        />
       </ContactContent>
       <Separator />
     </ContactContainer>
