@@ -19,6 +19,7 @@ export const Input = styled.input.attrs(({ id, type, field }) => ({
 
   &::placeholder {
     font-size: 1.2rem;
+    color: #b0b0b0;
   }
 
   @media (min-width: 700px) {
