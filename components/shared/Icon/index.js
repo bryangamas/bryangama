@@ -21,6 +21,7 @@ const Icon = ({
     <StyledIcon
       src={src}
       onClick={onClick}
+      href={href}
       bright={brightIfDark && darkMode}
       brighter={brigherIfDark && darkMode}
       ratio={ratio}
