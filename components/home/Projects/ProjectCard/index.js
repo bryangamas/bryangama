@@ -11,8 +11,9 @@ import {
   ToolItem,
   ToolList,
 } from "./style";
+import ProjectOptions from "../ProjectOptions";
 
-const ProjectCard = ({ project: p }) => {
+const ProjectCard = ({ project: p, labels }) => {
   return (
     <StyledProjectCard>
       <ProjectPhoto>
@@ -23,6 +24,7 @@ const ProjectCard = ({ project: p }) => {
           height={512}
           layout="responsive"
         />
+        <ProjectOptions links={p.links} labels={labels} />
       </ProjectPhoto>
       <ProjectInfo>
         <ProjectTitle>{p.title}</ProjectTitle>

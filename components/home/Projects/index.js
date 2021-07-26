@@ -9,7 +9,7 @@ const Projects = ({ projectsData: t }) => {
     <ProjectsContainer>
       <SectionTitle>{t.title}</SectionTitle>
       {projects.map((p) => {
-        return <ProjectCard key={p.slug} project={p} />;
+        return <ProjectCard key={p.slug} project={p} labels={t.labels} />;
       })}
     </ProjectsContainer>
   );
