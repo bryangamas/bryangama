@@ -44,8 +44,9 @@ export const ProjectPhoto = styled.figure`
   }
 
   & ${ProjectOptionsContainer} {
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity, visibility 0.3s ease-in-out;
   }
 
   &:hover {
@@ -57,6 +58,7 @@ export const ProjectPhoto = styled.figure`
     }
 
     & ${ProjectOptionsContainer} {
+      visibility: visible;
       opacity: 1;
     }
   }
