@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { Form } from "formik";
 
 export const StyledContactForm = styled(Form)`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2.8rem;
 
   & > * {
     margin-bottom: 2rem;
@@ -20,7 +22,8 @@ export const StyledContactForm = styled(Form)`
 export const SendButton = styled.button.attrs(() => ({
   type: "submit",
 }))`
-  align-self: center;
+  grid-column: 1 / 3;
+  justify-self: center;
   margin-top: 6%;
   padding: 0.8rem 3.2rem;
   color: ${({ theme }) => theme.bg.primary};
@@ -30,6 +33,7 @@ export const SendButton = styled.button.attrs(() => ({
   cursor: pointer;
   font-size: 1.2rem;
   font-family: inherit;
+  width: 50%;
 
   &:hover {
     background: ${({ theme }) => theme.text.primary};

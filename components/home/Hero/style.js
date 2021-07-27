@@ -6,6 +6,13 @@ export const HeroContainer = styled(StyledContainer).attrs(() => ({
 }))`
   justify-content: space-around;
   position: relative;
+  min-height: 100vh;
+
+  @media (min-width: 700px) {
+    min-height: initial;
+    height: 100vh;
+    max-height: 120rem;
+  }
 `;
 
 export const HeroContent = styled.main`
