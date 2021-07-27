@@ -3,11 +3,15 @@ import Icon from "@components/shared/Icon";
 import PageOptions from "../PageOptions";
 import { StyledHeader, HamburguerMenu, FullMenu } from "./style";
 
-const Header = ({ navData }) => {
+const Header = ({ navData, setMenuMobileVisible }) => {
+  const openMenuMobile = () => {
+    setMenuMobileVisible(true);
+  };
+
   return (
     <StyledHeader>
       <Icon src="/icons/logo.svg" />
-      <HamburguerMenu />
+      <HamburguerMenu onClick={openMenuMobile} />
       <FullMenu navData={navData} />
       <PageOptions />
     </StyledHeader>

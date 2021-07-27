@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const StyledSocialMediaDesktop = styled.section`
-  display: none;
+const StyledSocialMedia = styled.section`
+  display: ${({ show }) => (show ? "flex" : "none")};
 
   @media (min-width: 700px) {
     position: fixed;
@@ -16,4 +16,4 @@ const StyledSocialMediaDesktop = styled.section`
   }
 `;
 
-export default StyledSocialMediaDesktop;
+export default StyledSocialMedia;

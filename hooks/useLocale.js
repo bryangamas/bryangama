@@ -7,9 +7,15 @@ const useLocale = () => {
   const toggleLocale = () => {
     const newLocale = locale === "en" ? "es" : "en";
 
-    router.push(router.pathname, router.asPath, {
-      locale: newLocale,
-    });
+    router.push(
+      {
+        pathname: router.pathname,
+        query: router.query,
+        hash: window.location.hash,
+      },
+      undefined,
+      { locale: newLocale, scroll: false }
+    );
   };
 
   return {
