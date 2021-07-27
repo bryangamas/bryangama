@@ -6,7 +6,8 @@ export const ContactContainer = styled(StyledContainer).attrs(() => ({
   secondary: true,
   id: "contact",
 }))`
-  padding-bottom: 1.5rem;
+  padding-bottom: 7.5rem;
+  max-height: 100vh;
 
   & > * {
     margin-bottom: 4rem;
