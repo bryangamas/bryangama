@@ -6,12 +6,25 @@ export const ContactContainer = styled(StyledContainer).attrs(() => ({
   secondary: true,
   id: "contact",
 }))`
-  justify-content: space-between;
-  padding-bottom: 7.5rem;
+  padding-bottom: 1.5rem;
+
+  & > * {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 700px) {
+    & > * {
+      margin-bottom: 6rem;
+    }
+  }
 `;
 
 export const ContactContent = styled.div`
   display: contents;
+
+  & > * {
+    margin-bottom: 4rem;
+  }
 
   @media (min-width: 700px) {
     display: flex;
@@ -21,6 +34,7 @@ export const ContactContent = styled.div`
 
     & > * {
       flex: 1 1 0;
+      margin-bottom: 6rem;
     }
   }
 `;

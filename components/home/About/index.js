@@ -19,6 +19,7 @@ const About = ({ aboutData: t, fullTools }) => {
       </AboutMe>
 
       <Separator />
+      <Separator />
 
       <AboutSkills>
         <SectionTitle>{t.skillsTitle}</SectionTitle>
