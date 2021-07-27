@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.5",
+    "babel-plugin-styled-components": "^1.13.2",
     "formik": "^2.2.9",
     "next": "11.0.2-canary.1",
     "react": "17.0.2",
