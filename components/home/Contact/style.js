@@ -6,8 +6,8 @@ export const ContactContainer = styled(StyledContainer).attrs(() => ({
   secondary: true,
   id: "contact",
 }))`
+  position: relative;
   padding-bottom: 7.5rem;
-  max-height: 100vh;
 
   & > * {
     margin-bottom: 4rem;
@@ -50,17 +50,16 @@ export const ContactIntroduction = styled(Paragraph).attrs(() => ({
 
 export const SuccessMessage = styled(Paragraph)`
   display: ${({ showSucessMessage }) => (showSucessMessage ? "block" : "none")};
-  /* position: absolute; */
+  position: absolute;
   z-index: 2;
   background: #fff;
   padding: 1rem 2rem;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   color: #212426;
-  /* bottom: 7.5rem; */
+  bottom: 3.8rem;
 
   @media (min-width: 700px) {
-    /* bottom: initial;
-    top: 20%; */
+    bottom: 7rem;
   }
 `;
