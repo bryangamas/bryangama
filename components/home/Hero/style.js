@@ -11,7 +11,7 @@ export const HeroContainer = styled(StyledContainer).attrs(() => ({
   @media (min-width: 700px) {
     min-height: initial;
     height: 100vh;
-    max-height: 120rem;
+    max-height: 100rem;
   }
 `;
 

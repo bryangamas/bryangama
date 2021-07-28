@@ -19,7 +19,7 @@ export const MobileMenuContainer = styled.aside`
   padding: 6rem 5.4rem;
 
   ${({ menuVisible }) => (!menuVisible ? "transform: translate(100vw)" : "")};
-  transition: transform 0.3s ease-in;
+  transition: transform 0.4s ease-in;
 
   & > nav > ul {
     display: inline-flex;

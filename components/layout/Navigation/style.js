@@ -33,6 +33,6 @@ export const NavigationItem = styled.li`
 
   &.underline:hover::after {
     transform: translate(-50%) scaleX(1);
-    transition: transform 0.4s;
+    transition: transform 0.3s;
   }
 `;

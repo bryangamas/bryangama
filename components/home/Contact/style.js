@@ -9,12 +9,12 @@ export const ContactContainer = styled(StyledContainer).attrs(() => ({
   position: relative;
   padding-bottom: 7.5rem;
 
-  & > * {
+  & > h2 {
     margin-bottom: 4rem;
   }
 
   @media (min-width: 700px) {
-    & > * {
+    & > h2 {
       margin-bottom: 6rem;
     }
   }
@@ -57,9 +57,5 @@ export const SuccessMessage = styled(Paragraph)`
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   color: #212426;
-  bottom: 3.8rem;
-
-  @media (min-width: 700px) {
-    bottom: 7rem;
-  }
+  bottom: 9rem;
 `;

@@ -3,6 +3,11 @@ import styled from "styled-components";
 const StyledSocialMedia = styled.section`
   display: ${({ show }) => (show ? "flex" : "none")};
 
+  & img:hover,
+  & i:hover {
+    transform: translateY(-10px);
+  }
+
   @media (min-width: 700px) {
     position: fixed;
     top: 50%;

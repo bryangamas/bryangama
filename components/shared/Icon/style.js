@@ -36,9 +36,10 @@ const extraAttr = ({ onClick, href }) => {
   return onClick || href
     ? `cursor: pointer;
       opacity: 1;
+      transition: opacity 0.2s, transform 0.2s;
+      
       :hover {
         opacity: 0.7;
-        transition: opacity 0.3s ease-in;
       };`
     : "";
 };
