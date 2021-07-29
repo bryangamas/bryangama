@@ -26,7 +26,7 @@ const ProjectCard = ({ project: p, labels }) => {
           layout="responsive"
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(960, 512)
+            shimmer(958, 510)
           )}`}
         />
         <ProjectOptions links={p.links} labels={labels} />

@@ -67,6 +67,53 @@
           "Mobile First"
         ],
         "tools": ["React", "API Context", "Best-First"]
+      },
+      {
+        "slug": "batatabit",
+        "title": "Batatabit Landing Page",
+        "description": "Responsive home page for a company that offers information on the fastest moving cryptocurrencies on the market.",
+        "links": {
+          "source": "https://github.com/bryangamas/batatabit",
+          "live": "https://batatabit-site.netlify.app/"
+        },
+        "features": [
+          "Mobile First",
+          "Pixel Perfect",
+          "Transitions in interactive elements"
+        ],
+        "tools": ["HTML", "CSS", "JavaScript", "CSS Grid"]
+      },
+      {
+        "slug": "animationland",
+        "title": "AnimationLand",
+        "description": "Applying CSS animations, this mini game lets you click the bunnies to earn points. There is no a reset button because it is only made with CSS, but it was fun to make. 🙊",
+        "links": {
+          "source": "https://codepen.io/bryangamas/pen/GRWaORe",
+          "live": "https://codepen.io/bryangamas/full/GRWaORe"
+        },
+        "features": [
+          "The bunnies jump and blink",
+          "Drawing with CSS",
+          "No use of JavaScript"
+        ],
+        "tools": ["CSS Animations", "CSS Grid", "CSS Native Counter"]
+      },
+      {
+        "slug": "portfolio",
+        "title": "Bryan Gama",
+        "description": "Personal website and yes, you are looking at this project. Do it need a further introduction?",
+        "links": {
+          "source": "https://github.com/bryangamas/bryangama",
+          "design": "https://www.figma.com/file/iFvddiE3VqeLs7MaE9RAKA/Portafolio?node-id=10%3A3",
+          "live": "https://bryangama.com"
+        },
+        "features": [
+          "Dark Mode",
+          "Internationalization",
+          "Mailing API",
+          "CSS Transitions"
+        ],
+        "tools": ["Next.js", "React", "Styled Components", "CSS Grid"]
       }
     ]
   },
