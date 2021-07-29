@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { NavigationItem } from "./style";
-
-const resumeLink = "/resume";
+import useLocale from "hooks/useLocale";
 
 const Navigation = ({ className, navData, onClick }) => {
+  const { locale } = useLocale();
+
+  const resumeLink = `/me/resume${locale === "es" ? "-es" : ""}.pdf`;
+
   return (
     <nav className={className}>
       <ul>
@@ -17,7 +20,11 @@ const Navigation = ({ className, navData, onClick }) => {
               key={key}
             >
               <Link href={resumeButton ? resumeLink : `#${key}`}>
-                <a target={resumeButton ? "_blank" : null} onClick={onClick}>
+                <a
+                  target={resumeButton ? "_blank" : null}
+                  rel={resumeButton ? "noopener" : null}
+                  onClick={onClick}
+                >
                   {text}
                 </a>
               </Link>
