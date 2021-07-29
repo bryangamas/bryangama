@@ -12,6 +12,7 @@ import {
   ToolList,
 } from "./style";
 import ProjectOptions from "../ProjectOptions";
+import { shimmer, toBase64 } from "utils/shimmer";
 
 const ProjectCard = ({ project: p, labels }) => {
   return (
@@ -23,6 +24,10 @@ const ProjectCard = ({ project: p, labels }) => {
           width={960}
           height={512}
           layout="responsive"
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(960, 512)
+          )}`}
         />
         <ProjectOptions links={p.links} labels={labels} />
       </ProjectPhoto>

@@ -6,8 +6,9 @@ export const ProjectOptionsContainer = styled.section`
   top: 50%;
   left: 50%;
   display: flex;
+  gap: 1px;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #ccc;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: ${({ theme }) => theme.shadow.general};
@@ -18,10 +19,10 @@ export const ProjectLink = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0.8rem 1.2rem;
-  background-color: inherit;
+  background-color: #fff;
 
   &:hover {
-    background-color: #cccc;
+    background-color: #ccc;
     transition: background-color 0.3s;
   }
 `;

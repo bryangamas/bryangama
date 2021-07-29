@@ -150,6 +150,7 @@ export const ToolItem = styled.li`
   box-shadow: ${({ theme }) => theme.shadow.general};
 
   &:hover {
-    background: ${({ theme }) => theme.bg.secondary};
+    color: ${({ theme }) => theme.bg.primary};
+    background: ${({ theme }) => theme.text.primary};
   }
 `;
