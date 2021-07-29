@@ -1,7 +1,6 @@
 import Paragraph from "@components/shared/Paragraph";
 import { StyledParagraph } from "@components/shared/Paragraph/style";
 import styled from "styled-components";
-import Image from "next/image";
 import { ProjectOptionsContainer } from "../ProjectOptions/style";
 
 export const StyledProjectCard = styled.article`
@@ -139,6 +138,7 @@ export const ToolList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   font-size: var(--small-font-size);
+  margin-bottom: -1rem;
 `;
 
 export const ToolItem = styled.li`
@@ -146,6 +146,7 @@ export const ToolItem = styled.li`
   background: ${({ theme }) => theme.bg.primary};
   padding: 0.4rem 0.8rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   border-radius: 8px;
   box-shadow: ${({ theme }) => theme.shadow.general};
 
