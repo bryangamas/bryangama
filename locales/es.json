@@ -43,8 +43,8 @@
         "title": "Loopstudios Landing Page",
         "description": "Página de inicio 100% responsiva para una empresa de realidad virtual.",
         "links": {
-          "live": "https://loopstudios-site.vercel.app",
-          "source": "https://github.com/bryangamas/loopstudios-landing-page"
+          "source": "https://github.com/bryangamas/loopstudios-landing-page",
+          "live": "https://loopstudios-site.vercel.app"
         },
         "features": [
           "Mobile First",
@@ -58,8 +58,8 @@
         "title": "Juego El OSO",
         "description": "Juego en el que debes formar la mayor cantidad de palabras OSO posible antes de que te gane el computador. ¿Podrás ganarle?",
         "links": {
-          "live": "https://el-oso.vercel.app",
-          "source": "https://github.com/bryangamas/el-oso/"
+          "source": "https://github.com/bryangamas/el-oso/",
+          "live": "https://el-oso.vercel.app"
         },
         "features": [
           "Animaciones por cada punto ganado",
@@ -67,6 +67,53 @@
           "Mobile First"
         ],
         "tools": ["React", "API Context", "Best First"]
+      },
+      {
+        "slug": "batatabit",
+        "title": "Batatabit Landing Page",
+        "description": "Página de inicio responsiva para una empresa que ofrece información de las criptomonedas de mayor movimiento en el mercado.",
+        "links": {
+          "source": "https://github.com/bryangamas/batatabit",
+          "live": "https://batatabit-site.netlify.app/"
+        },
+        "features": [
+          "Mobile First",
+          "Pixel Perfect",
+          "Transiciones en elementos interactivos"
+        ],
+        "tools": ["HTML", "CSS", "JavaScript", "CSS Grid"]
+      },
+      {
+        "slug": "animationland",
+        "title": "AnimationLand",
+        "description": "Aplicando animaciones con CSS, este mini jueguito permite clickear a los conejitos para ganar puntos. No hay un reinicio ya que solo está con CSS, pero fue divertido hacerlo. 🙊",
+        "links": {
+          "source": "https://codepen.io/bryangamas/pen/GRWaORe",
+          "live": "https://codepen.io/bryangamas/full/GRWaORe"
+        },
+        "features": [
+          "Los conejitos saltan y parpadean",
+          "Dibujo con CSS",
+          "Sin uso de JavaScript"
+        ],
+        "tools": ["Animaciones con CSS", "CSS Grid", "Contador Nativo de CSS"]
+      },
+      {
+        "slug": "portfolio",
+        "title": "Bryan Gama",
+        "description": "Página web personal y sí, estás viendo este proyecto. ¿Necesita mayor descripción?",
+        "links": {
+          "source": "https://github.com/bryangamas/bryangama",
+          "design": "https://www.figma.com/file/iFvddiE3VqeLs7MaE9RAKA/Portafolio?node-id=10%3A3",
+          "live": "https://bryangama.com"
+        },
+        "features": [
+          "Modo oscuro",
+          "Manejo de idiomas",
+          "API de envío de correos",
+          "Transiciones con CSS"
+        ],
+        "tools": ["Next.js", "React", "Styled Components", "CSS Grid"]
       }
     ]
   },

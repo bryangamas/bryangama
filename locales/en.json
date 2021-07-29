@@ -43,8 +43,8 @@
         "title": "Loopstudios Landing Page",
         "description": "100% responsive landing page for a virtual reality company. ",
         "links": {
-          "live": "https://loopstudios-site.vercel.app",
-          "source": "https://github.com/bryangamas/loopstudios-landing-page"
+          "source": "https://github.com/bryangamas/loopstudios-landing-page",
+          "live": "https://loopstudios-site.vercel.app"
         },
         "features": [
           "Mobile First",
@@ -58,8 +58,8 @@
         "title": "The OSO Game",
         "description": "Game in which you must form as many “OSO” words as possible before the computer beats you. Can you beat it?",
         "links": {
-          "live": "https://el-oso.vercel.app",
-          "source": "https://github.com/bryangamas/el-oso/"
+          "source": "https://github.com/bryangamas/el-oso/",
+          "live": "https://el-oso.vercel.app"
         },
         "features": [
           "Animations for each point earned",
@@ -67,6 +67,53 @@
           "Mobile First"
         ],
         "tools": ["React", "API Context", "Best-First"]
+      },
+      {
+        "slug": "batatabit",
+        "title": "Batatabit Landing Page",
+        "description": "Responsive home page for a company that offers information on the fastest moving cryptocurrencies on the market.",
+        "links": {
+          "source": "https://github.com/bryangamas/batatabit",
+          "live": "https://batatabit-site.netlify.app/"
+        },
+        "features": [
+          "Mobile First",
+          "Pixel Perfect",
+          "Transitions in interactive elements"
+        ],
+        "tools": ["HTML", "CSS", "JavaScript", "CSS Grid"]
+      },
+      {
+        "slug": "animationland",
+        "title": "AnimationLand",
+        "description": "Applying CSS animations, this mini game lets you click the bunnies to earn points. There is no a reset button because it is only made with CSS, but it was fun to make. 🙊",
+        "links": {
+          "source": "https://codepen.io/bryangamas/pen/GRWaORe",
+          "live": "https://codepen.io/bryangamas/full/GRWaORe"
+        },
+        "features": [
+          "The bunnies jump and blink",
+          "Drawing with CSS",
+          "No use of JavaScript"
+        ],
+        "tools": ["CSS Animations", "CSS Grid", "CSS Native Counter"]
+      },
+      {
+        "slug": "portfolio",
+        "title": "Bryan Gama",
+        "description": "Personal website and yes, you are looking at this project. Do it need a further introduction?",
+        "links": {
+          "source": "https://github.com/bryangamas/bryangama",
+          "design": "https://www.figma.com/file/iFvddiE3VqeLs7MaE9RAKA/Portafolio?node-id=10%3A3",
+          "live": "https://bryangama.com"
+        },
+        "features": [
+          "Dark Mode",
+          "Internationalization",
+          "Mailing API",
+          "CSS Transitions"
+        ],
+        "tools": ["Next.js", "React", "Styled Components", "CSS Grid"]
       }
     ]
   },

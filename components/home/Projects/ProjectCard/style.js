@@ -44,8 +44,9 @@ export const ProjectPhoto = styled.figure`
   }
 
   & ${ProjectOptionsContainer} {
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity, visibility 0.3s ease-in-out;
   }
 
   &:hover {
@@ -57,6 +58,7 @@ export const ProjectPhoto = styled.figure`
     }
 
     & ${ProjectOptionsContainer} {
+      visibility: visible;
       opacity: 1;
     }
   }
@@ -148,6 +150,7 @@ export const ToolItem = styled.li`
   box-shadow: ${({ theme }) => theme.shadow.general};
 
   &:hover {
-    background: ${({ theme }) => theme.bg.secondary};
+    color: ${({ theme }) => theme.bg.primary};
+    background: ${({ theme }) => theme.text.primary};
   }
 `;

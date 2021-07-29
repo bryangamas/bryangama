@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const StyledFormField = styled.label`
+  display: contents;
+`;
+
 export const Label = styled.span`
   font-size: 1.2rem;
   padding: 0.5rem 0px;
@@ -9,10 +13,6 @@ export const Label = styled.span`
     font-size: 1.6rem;
     padding: 1rem 0px;
   }
-`;
-
-export const StyledFormField = styled.label`
-  display: contents;
 `;
 
 export const Input = styled.input.attrs(({ id, type, field }) => ({
