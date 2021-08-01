@@ -1,4 +1,10 @@
 {
+  "homeMetaData": {
+    "description": "Bryan Gama is a Full Stack Developer, pasionate about implementing incredible solutions and designs using React, Next.js, Node.js and MongoDB. ",
+    "title": "Bryan Gama | Home",
+    "url": "https://bryangama.com",
+    "image": "https://gist.githubusercontent.com/bryangamas/4a3e8a71b49a6b794f8766d5a268ea46/raw/248d7b789ba6b120958acbe890896296e16aa683/logo.png"
+  },
   "navData": {
     "home": "Home",
     "about": "About",
@@ -10,7 +16,7 @@
     "greetings": "Hi there! My name is",
     "profileName": "Bryan Gama",
     "role": "Full Stack Developer",
-    "description": "I am passionate about technology and implementing incredible solutions and designs using:"
+    "description": "Passionate about technology and implementing incredible solutions and designs using:"
   },
   "aboutData": {
     "title": "About me",
@@ -22,11 +28,11 @@
       },
       {
         "icon": "info/tools",
-        "text": "Within the stacks that I handle, I like to work mainly with React, Node.js (with Express) and with one of the technologies with which I interact the most and I think it has a lot of potential: Next.js. "
+        "text": "Between the technologies that I handle, I like to work mainly with React, Node.js (with Express) and with one of the technologies with which I interact the most and I think it has a lot of potential: Next.js. "
       },
       {
         "icon": "info/computer",
-        "text": "I am a true believer that we never stop learning, which is why I am always trying new technologies. I was recently testing Vue.js."
+        "text": "I am a true believer that we never stop learning, that's why I am always trying new technologies. I was recently testing Vue.js."
       }
     ]
   },

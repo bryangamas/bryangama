@@ -11,7 +11,10 @@ const ProjectOptions = ({ links, labels }) => {
           <Link key={key} href={link}>
             <a rel="noopener" target={"_blank"}>
               <ProjectLink>
-                <Icon src={`/icons/projectOptions/${key}.svg`} />
+                <Icon
+                  alt={labels[key]}
+                  src={`/icons/projectOptions/${key}.svg`}
+                />
                 {labels[key]}
               </ProjectLink>
             </a>

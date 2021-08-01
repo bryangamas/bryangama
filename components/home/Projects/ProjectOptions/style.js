@@ -1,4 +1,3 @@
-import Icon from "@components/shared/Icon";
 import styled from "styled-components";
 
 export const ProjectOptionsContainer = styled.section`

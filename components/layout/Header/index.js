@@ -10,7 +10,7 @@ const Header = ({ navData, setMenuMobileVisible }) => {
 
   return (
     <StyledHeader>
-      <Icon src="/icons/logo.svg" />
+      <Icon src="/icons/logo.svg" href="/" alt="Go to home" />
       <HamburguerMenu onClick={openMenuMobile} />
       <FullMenu navData={navData} />
       <PageOptions />

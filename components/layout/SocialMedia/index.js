@@ -8,6 +8,7 @@ const SocialMedia = ({ className, show }) => {
       <Icon
         src="/icons/socialMedia/github.svg"
         href="https://github.com/bryangamas"
+        alt="Go to Github Profile"
         blank
         brigherIfDark
       />
@@ -15,12 +16,14 @@ const SocialMedia = ({ className, show }) => {
       <Icon
         src="/icons/socialMedia/twitter.svg"
         href="https://twitter.com/bgamas_"
+        alt="Go to Twitter Profile"
         blank
       />
 
       <Icon
         src="/icons/socialMedia/linkedin.svg"
         href="https://linkedin.com/in/bgamas"
+        alt="Go to LinkedIn Profile"
         blank
       />
     </StyledSocialMedia>

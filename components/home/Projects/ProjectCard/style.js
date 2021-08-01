@@ -109,6 +109,7 @@ export const FeatureList = styled.ul`
 
 const StyledFeatureItem = styled(Paragraph).attrs(() => ({
   icon: "/icons/check.svg",
+  alt: "feature",
 }))`
   & > * {
     margin-left: 0px;
