@@ -33,7 +33,8 @@
   },
   {
     "name": "Notion",
-    "icon": "notion"
+    "icon": "notion",
+    "mask": true
   },
   {
     "name": "Tailwind CSS",
@@ -41,7 +42,8 @@
   },
   {
     "name": "Next.js",
-    "icon": "nextjs"
+    "icon": "nextjs",
+    "mask": true
   },
   {
     "name": "Node.js",

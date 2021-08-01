@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import profilePhoto from "@public/imgs/profile.png";
 
-import { Title, MainTitle, Subtitle } from "@components/shared/Title";
+import { IntroTitle, MainTitle, Subtitle } from "@components/shared/Title";
 import Icon from "@components/shared/Icon";
 import SocialMedia from "@components/layout/SocialMedia";
 import SkillsList from "@components/shared/SkillsList";
@@ -17,8 +17,11 @@ const Hero = ({ heroData: t, mainTools }) => {
       <SocialMedia />
       <HeroContent>
         <MainInfo>
-          <Title>{t.greetings}</Title>
-          <MainTitle>{t.profileName}</MainTitle>
+          <MainTitle>
+            <IntroTitle>{t.greetings}</IntroTitle>
+            <br />
+            {t.profileName}
+          </MainTitle>
           <Subtitle>{t.role}</Subtitle>
           <Paragraph>{t.description}</Paragraph>
           <SkillsList center skillsList={mainTools} />

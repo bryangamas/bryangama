@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { StyledParagraph } from "../Paragraph/style";
 
-const IconAsImg = styled.img`
+const transformAttrs = ({ alt, onClick, href, ...others }) => ({
+  title: onClick || href ? alt : null,
+  ...others,
+});
+
+const IconAsImg = styled.img.attrs(transformAttrs)`
   width: 2.4rem;
   height: 2.4rem;
   ${(props) => extraAttr(props)}
@@ -13,7 +18,7 @@ const IconAsImg = styled.img`
   }
 `;
 
-const IconAsMask = styled.i`
+const IconAsMask = styled.i.attrs(transformAttrs)`
   display: inline-block;
   mask-image: url(${({ src, mask }) => (mask ? mask : src)});
   mask-size: contain;
