@@ -5,7 +5,8 @@
   },
   {
     "name": "Next.js",
-    "icon": "nextjs"
+    "icon": "nextjs",
+    "mask": true
   },
   {
     "name": "Node.js",
