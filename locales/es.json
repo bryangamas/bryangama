@@ -1,4 +1,10 @@
 {
+  "homeMetaData": {
+    "description": "Bryan Gama es un desarrollador Full Stack, apasionado por implementar soluciones y diseños increíbles usando React, Next.js, Node.js y MongoDB. ",
+    "title": "Bryan Gama | Home",
+    "url": "https://bryangama.com",
+    "image": "https://gist.githubusercontent.com/bryangamas/4a3e8a71b49a6b794f8766d5a268ea46/raw/248d7b789ba6b120958acbe890896296e16aa683/logo.png"
+  },
   "navData": {
     "home": "Inicio",
     "about": "Sobre mí",

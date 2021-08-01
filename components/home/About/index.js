@@ -12,13 +12,12 @@ const About = ({ aboutData: t, fullTools }) => {
         <SectionTitle>{t.title}</SectionTitle>
         <Separator />
         {t.aboutItems.map(({ icon, text }) => (
-          <Paragraph key={skillNumber++} icon={`/icons/${icon}.svg`}>
+          <Paragraph key={skillNumber++} icon={`/icons/${icon}.svg`} alt={icon}>
             {text}
           </Paragraph>
         ))}
       </AboutMe>
 
-      <Separator />
       <Separator />
 
       <AboutSkills>

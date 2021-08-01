@@ -11,6 +11,7 @@ const SkillsList = ({ skillsList, center, className }) => {
             <IconWithCaption
               brighterIfDark
               src={`/icons/tools/${icon}.svg`}
+              alt={name}
               mask={mask ? `/icons/tools/mask/${icon}.svg` : null}
               caption={name}
             />

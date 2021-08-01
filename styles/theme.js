@@ -7,7 +7,7 @@ const light = {
   text: {
     primary: "#212426",
     secondary: "#4E6172",
-    highlight: "#2B97D9",
+    highlight: "#0C679F",
     auxiliary: "rgba(78, 97, 114, 0.8);",
     error: "#BD1414",
   },
