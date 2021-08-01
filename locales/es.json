@@ -62,9 +62,9 @@
       {
         "slug": "el-oso",
         "title": "Juego El OSO",
-        "description": "Juego en el que debes formar la mayor cantidad de palabras OSO posible antes de que te gane el computador. ¿Podrás ganarle?",
         "links": {
           "source": "https://github.com/bryangamas/el-oso/",
+          "description": "Juego en el que debes formar la mayor cantidad de palabras \"OSO\" posible antes de que te gane el computador. ¿Podrás ganarle?",
           "live": "https://el-oso.vercel.app"
         },
         "features": [
@@ -92,7 +92,7 @@
       {
         "slug": "animationland",
         "title": "AnimationLand",
-        "description": "Aplicando animaciones con CSS, este mini jueguito permite clickear a los conejitos para ganar puntos. No hay un reinicio ya que solo está con CSS, pero fue divertido hacerlo. 🙊",
+        "description": "Aplicando animaciones con CSS, este mini juego permite clickear a los conejitos para ganar puntos. No hay un botón de reinicio ya que solo está hecho con CSS, pero fue divertido de hacer. 🙊",
         "links": {
           "source": "https://codepen.io/bryangamas/pen/GRWaORe",
           "live": "https://codepen.io/bryangamas/full/GRWaORe"
@@ -107,7 +107,7 @@
       {
         "slug": "portfolio",
         "title": "Bryan Gama",
-        "description": "Página web personal y sí, estás viendo este proyecto. ¿Necesita mayor descripción?",
+        "description": "Página web personal y sí, estás viendo este proyecto. ¿Necesita mayor introducción?",
         "links": {
           "source": "https://github.com/bryangamas/bryangama",
           "design": "https://www.figma.com/file/iFvddiE3VqeLs7MaE9RAKA/Portafolio?node-id=10%3A3",

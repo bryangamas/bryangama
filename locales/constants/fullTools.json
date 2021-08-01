@@ -32,6 +32,10 @@
     "icon": "git"
   },
   {
+    "name": "Notion",
+    "icon": "notion"
+  },
+  {
     "name": "Tailwind CSS",
     "icon": "tailwind"
   },
@@ -60,16 +64,21 @@
     "icon": "mongodb"
   },
   {
-    "name": "Java",
-    "icon": "java"
+    "name": "Jest",
+    "icon": "jest",
+    "mask": true
   },
   {
     "name": "Python",
     "icon": "python"
   },
   {
-    "name": "Jest",
-    "icon": "jest",
+    "name": "Java",
+    "icon": "java"
+  },
+  {
+    "name": "Spring Framework",
+    "icon": "spring",
     "mask": true
   },
   {
