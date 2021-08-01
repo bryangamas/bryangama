@@ -8,7 +8,7 @@ const Footer = ({ footerData }) => {
       <FooterCredits>{footerData.credits}</FooterCredits>
       <Icon
         src="/icons/up.svg"
-        alt="Go to up"
+        alt="Go up"
         href="#home"
         brightIfDark
         ratio={0.7}

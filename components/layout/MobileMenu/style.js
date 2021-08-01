@@ -45,6 +45,10 @@ export const MobileMenuContainer = styled.aside`
     height: 3.2rem;
     margin: 0 2rem;
   }
+
+  @media (min-width: 700px) {
+    display: none;
+  }
 `;
 
 export const CloseMenuIcon = styled(Icon).attrs(() => ({

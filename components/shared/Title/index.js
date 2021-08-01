@@ -1,22 +1,30 @@
 import React from "react";
 import StyledTitle from "./style";
 
-export const Title = ({ children }) => {
-  return <StyledTitle>{children}</StyledTitle>;
-};
-
 export const MainTitle = ({ children }) => {
   return (
-    <StyledTitle bigger highlight>
+    <StyledTitle as="h1" bigger highlight>
       {children}
     </StyledTitle>
   );
 };
 
+export const IntroTitle = ({ children }) => {
+  return <StyledTitle as="span">{children}</StyledTitle>;
+};
+
 export const Subtitle = ({ children }) => {
-  return <StyledTitle auxiliary>{children}</StyledTitle>;
+  return (
+    <StyledTitle as="h3" auxiliary>
+      {children}
+    </StyledTitle>
+  );
 };
 
 export const SectionTitle = ({ children }) => {
-  return <StyledTitle underline>{children}</StyledTitle>;
+  return (
+    <StyledTitle as="h2" underline>
+      {children}
+    </StyledTitle>
+  );
 };
