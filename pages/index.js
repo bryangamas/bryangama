@@ -21,9 +21,7 @@ export default function HomePage({ content }) {
 
   return (
     <>
-      <Head>
-        <HomeMeta />
-      </Head>
+      <HomeMeta />
       <Layout navData={navData} footerData={footerData}>
         <Hero heroData={heroData} mainTools={mainTools} />
         <About aboutData={aboutData} fullTools={fullTools} />

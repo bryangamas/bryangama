@@ -49,6 +49,7 @@ export const MobileMenuContainer = styled.aside`
 
 export const CloseMenuIcon = styled(Icon).attrs(() => ({
   src: "/icons/close.svg",
+  alt: "Close menu",
 }))`
   position: absolute;
   top: 4rem;

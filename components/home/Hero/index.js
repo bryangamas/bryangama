@@ -32,7 +32,13 @@ const Hero = ({ heroData: t, mainTools }) => {
           />
         </ProfilePhoto>
       </HeroContent>
-      <Icon brightIfDark ratio={0.7} src="/icons/down.svg" href="#about" />
+      <Icon
+        alt={"Go to about"}
+        brightIfDark
+        ratio={0.7}
+        src="/icons/down.svg"
+        href="#about"
+      />
     </HeroContainer>
   );
 };
