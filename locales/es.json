@@ -62,9 +62,9 @@
       {
         "slug": "el-oso",
         "title": "Juego El OSO",
+        "description": "Juego en el que debes formar la mayor cantidad de palabras \"OSO\" posible antes de que te gane el computador. ¿Podrás ganarle?",
         "links": {
           "source": "https://github.com/bryangamas/el-oso/",
-          "description": "Juego en el que debes formar la mayor cantidad de palabras \"OSO\" posible antes de que te gane el computador. ¿Podrás ganarle?",
           "live": "https://el-oso.vercel.app"
         },
         "features": [
