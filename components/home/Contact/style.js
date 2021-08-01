@@ -42,6 +42,7 @@ export const ContactContent = styled.div`
 
 export const ContactIntroduction = styled(Paragraph).attrs(() => ({
   icon: "/icons/info/contact.svg",
+  alt: "contact",
 }))`
   & > * {
     margin: 0 1.8rem;

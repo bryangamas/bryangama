@@ -16,6 +16,7 @@ const Icon = ({
   brigherIfDark,
   ratio,
   className,
+  alt,
 }) => {
   const { value: darkMode } = useDarkMode();
   const body = (
@@ -27,13 +28,18 @@ const Icon = ({
       bright={brightIfDark && darkMode}
       brighter={brigherIfDark && darkMode}
       ratio={ratio}
+      alt={alt}
     />
   );
 
   if (href) {
     return (
       <Link href={href}>
-        <a rel="noopener" target={blank ? "_blank" : null}>
+        <a
+          aria-label={alt}
+          rel={blank ? "noopener" : null}
+          target={blank ? "_blank" : null}
+        >
           {body}
         </a>
       </Link>

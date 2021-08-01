@@ -39,6 +39,7 @@ export const FullMenu = styled(Navigation)`
 
 export const HamburguerMenu = styled(StyledIcon).attrs(() => ({
   src: "/icons/hamburger.svg",
+  alt: "Open menu",
 }))`
   @media (min-width: 700px) {
     display: none;

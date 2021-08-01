@@ -9,11 +9,6 @@ const Layout = ({ children, navData, footerData }) => {
 
   return (
     <>
-      <Head>
-        <title>Bryan Gama | Full Stack Developer</title>
-        <meta name="description" content="Fullstack Developer" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header navData={navData} setMenuMobileVisible={setMenuMobileVisible} />
       <MobileMenu
         navData={navData}
