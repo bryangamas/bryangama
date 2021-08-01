@@ -24,15 +24,15 @@
     "aboutItems": [
       {
         "icon": "info/person",
-        "text": "I am a Systems Engineering student and I currently reside in Peru."
+        "text": "I'm a Systems Engineering student based in Peru."
       },
       {
         "icon": "info/tools",
-        "text": "Between the technologies that I handle, I like to work mainly with React, Node.js (with Express) and with one of the technologies with which I interact the most and I think it has a lot of potential: Next.js. "
+        "text": "Among the technologies that I use, I like to work mainly with React, Node.js (with Express) and with one of the technologies with which I interact the most and I think it has a lot of potential: Next.js. "
       },
       {
         "icon": "info/computer",
-        "text": "I am a true believer that we never stop learning, that's why I am always trying new technologies. I was recently testing Vue.js."
+        "text": "I'm a true believer that we never stop learning, which is why I'm always trying new technologies. I was recently testing Vue.js"
       }
     ]
   },
@@ -47,7 +47,7 @@
       {
         "slug": "loopstudios",
         "title": "Loopstudios Landing Page",
-        "description": "100% responsive landing page for a virtual reality company. ",
+        "description": "Fully responsive landing page for a virtual reality company. ",
         "links": {
           "source": "https://github.com/bryangamas/loopstudios-landing-page",
           "live": "https://loopstudios-site.vercel.app"
@@ -77,7 +77,7 @@
       {
         "slug": "batatabit",
         "title": "Batatabit Landing Page",
-        "description": "Responsive home page for a company that offers information on the fastest moving cryptocurrencies on the market.",
+        "description": "Responsive landing page for a company that offers information about cryptocurrencies.",
         "links": {
           "source": "https://github.com/bryangamas/batatabit",
           "live": "https://batatabit-site.netlify.app/"
