@@ -4,11 +4,11 @@ import Hero from "@components/home/Hero";
 import Projects from "@components/home/Projects";
 import Layout from "@components/layout";
 import HomeMeta from "@components/meta/HomeMeta";
-import Head from "next/head";
 import locales from "../locales";
 
 export default function HomePage({ content }) {
   const {
+    homeMetaData,
     navData,
     heroData,
     aboutData,
@@ -21,7 +21,7 @@ export default function HomePage({ content }) {
 
   return (
     <>
-      <HomeMeta />
+      <HomeMeta homeMetaData={homeMetaData} />
       <Layout navData={navData} footerData={footerData}>
         <Hero heroData={heroData} mainTools={mainTools} />
         <About aboutData={aboutData} fullTools={fullTools} />
