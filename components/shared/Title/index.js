@@ -15,7 +15,7 @@ export const IntroTitle = ({ children }) => {
 
 export const Subtitle = ({ children }) => {
   return (
-    <StyledTitle as="h3" auxiliary>
+    <StyledTitle as="h2" auxiliary>
       {children}
     </StyledTitle>
   );
