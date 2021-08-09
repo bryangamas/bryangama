@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionTitle } from "@components/shared/Title";
 import { AboutContent, AboutMe, AboutSkills, FullSkillsList } from "./style";
 import Paragraph from "@components/shared/Paragraph";

@@ -1,5 +1,4 @@
 import { IconWithCaption } from "@components/shared/Icon";
-import React from "react";
 import { StyledSkillsList, SkillItem } from "./style";
 
 const SkillsList = ({ skillsList, center, className }) => {

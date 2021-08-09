@@ -1,6 +1,5 @@
 import { SectionTitle } from "@components/shared/Title";
 import ProjectCard from "@components/home/Projects/ProjectCard";
-import React from "react";
 import { ProjectsContainer } from "./style";
 
 const Projects = ({ projectsData: t }) => {

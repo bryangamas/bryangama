@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { NavigationItem } from "./style";
 import useLocale from "hooks/useLocale";

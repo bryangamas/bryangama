@@ -1,4 +1,3 @@
-import React from "react";
 import Paragraph from "@components/shared/Paragraph";
 import Image from "next/image";
 

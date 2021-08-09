@@ -1,6 +1,5 @@
 import Icon from "@components/shared/Icon";
 import Link from "next/link";
-import React from "react";
 import { ProjectOptionsContainer, ProjectLink } from "./style";
 
 const ProjectOptions = ({ links, labels }) => {

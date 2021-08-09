@@ -1,4 +1,3 @@
-import React from "react";
 import FormField from "@components/shared/FormField";
 import { StyledContactForm, SendButton } from "./style";
 import { Formik } from "formik";

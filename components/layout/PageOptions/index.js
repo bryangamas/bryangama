@@ -1,4 +1,3 @@
-import React from "react";
 import StyledPageOptions from "./style";
 import Icon from "@components/shared/Icon";
 import useDarkMode from "use-dark-mode";
