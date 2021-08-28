@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import MobileMenu from "./MobileMenu";

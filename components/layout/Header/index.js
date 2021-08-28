@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "@components/shared/Icon";
 import PageOptions from "../PageOptions";
 import { StyledHeader, HamburguerMenu, FullMenu } from "./style";

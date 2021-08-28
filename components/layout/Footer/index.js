@@ -1,5 +1,4 @@
 import Icon from "@components/shared/Icon";
-import React from "react";
 import { StyledFooter, FooterCredits } from "./style";
 
 const Footer = ({ footerData }) => {

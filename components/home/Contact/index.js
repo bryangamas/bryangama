@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Separator from "@components/shared/Separator";
+import { useEffect, useState } from "react";
 import ContactForm from "./ContactForm";
 import { SectionTitle } from "@components/shared/Title";
 import {

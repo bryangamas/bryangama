@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "../Navigation";
 import SocialMedia from "../SocialMedia";
 import { MobileMenuContainer, GlobalStyle, CloseMenuIcon } from "./style";

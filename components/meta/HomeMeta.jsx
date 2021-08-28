@@ -1,5 +1,4 @@
 import Head from "next/head";
-import React from "react";
 
 const HomeMeta = ({ homeMetaData: m }) => {
   return (

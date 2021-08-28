@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledParagraph, ParagraphWrapper } from "./style";
 import Icon from "@components/shared/Icon";
 
