@@ -16,6 +16,11 @@ const HomeMeta = ({ homeMetaData: m }) => {
       <meta property="og:url" content={m.url} />
       <meta property="og:image" content={m.image} />
       <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="@bgamas_" />
+      <meta name="twitter:creator" content="@bgamas_" />
+      <meta name="twitter:description" content={m.description} />
+      <meta name="twitter:image" content={m.image} />
     </Head>
   );
 };
